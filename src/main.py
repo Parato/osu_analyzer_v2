@@ -28,14 +28,14 @@ class OsuAnalysisLauncher:
 
     def __init__(self):
         self.current_dir = Path("")
-        self.config_file = Path("saves/overlay") / "calibration_data.json"
-        self.analysis_file = Path("saves/result") / "analysis_debug.json"
+        self.config_file = Path("src/saves/overlay") / "calibration_data.json"
+        self.analysis_file = Path("src/saves/result") / "analysis_debug.json"
         self.config_manager = ConfigManager()
 
     def find_videos(self) -> list[str]:
         """Find video files in common directories."""
         video_extensions = ['.mp4', '.avi', '.mov', '.mkv', '.m4v', '.flv', '.webm']
-        search_dirs = ["test_videos", "videos", ".", "Downloads"]
+        search_dirs = ["src/test_videos"]
 
         found_videos = []
         for directory in search_dirs:

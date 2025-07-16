@@ -11,8 +11,9 @@ from collections import deque
 # Local imports
 from config_manager import ConfigManager
 from recognition import OsuRecognitionSystem
+from ocr_calibrator import OCRCalibrator # Used for preprocessing
 import video_processing
-import visualization  # BUG FIX: Added missing import
+import visualization
 
 # --- Constants for tracking ---
 TRACKING_MAX_DISTANCE = 50
@@ -37,7 +38,7 @@ class AnalysisEngine:
         self.height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         self.cap.release()
 
-        self.output_dir = Path("saves/overlay")
+        self.output_dir = Path("src/saves/overlay")
         self.recognition_system = OsuRecognitionSystem(debug_mode=True)
 
         # Load calibration and OCR settings
@@ -59,6 +60,9 @@ class AnalysisEngine:
             "data_points": [],
             "hit_circles": [],
         }
+        # BUG FIX: Instantiate OCRCalibrator to use its preprocessing method
+        self.ocr_calibrator = OCRCalibrator(video_path, config_manager)
+
 
     def _load_calibration_data(self) -> Dict:
         config_path = self.output_dir / "calibration_data.json"
@@ -92,9 +96,10 @@ class AnalysisEngine:
         frame_queue = multiprocessing.Queue()
         result_queue = multiprocessing.Queue()
 
-        pool = multiprocessing.Pool(num_workers, video_processing.detection_worker,
-                                    (self.video_path, self.ui_regions, self.hit_circle_params, frame_queue,
-                                     result_queue))
+        # Prepare arguments for the worker pool
+        worker_args = (self.video_path, self.ui_regions, self.hit_circle_params, frame_queue, result_queue)
+        pool = multiprocessing.Pool(num_workers, video_processing.detection_worker, worker_args)
+
 
         print("Loading frames into queue...")
         frames_to_process = range(0, self.total_frames, 2)  # Process every other frame
@@ -123,7 +128,7 @@ class AnalysisEngine:
 
         # 3. Save final data
         # Ensure the output directory exists
-        analysis_output_dir = Path("saves/result")
+        analysis_output_dir = Path("src/saves/result")
         analysis_output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
 
         analysis_data_path = analysis_output_dir / "analysis_debug.json"  # Specify the full file path
@@ -144,6 +149,8 @@ class AnalysisEngine:
 
         last_combo_hash = None
         last_acc_hash = None
+        last_combo_value = None
+        last_acc_value = None
 
         for result in detection_results:
             frame_num = result['frame']
@@ -154,9 +161,36 @@ class AnalysisEngine:
                 detected_circles = [tuple(c) for c in result.get('circles', [])]
                 self._update_circle_tracker(detected_circles, timestamp)
 
-            # Perform Selective OCR
+            # --- BUG FIX: Implement the missing OCR logic ---
             current_data_point = {"frame": frame_num, "timestamp": timestamp, "combo": None, "accuracy": None}
-            # ... (OCR logic from original analyzer's process_video_full) ...
+
+            # Process Combo
+            combo_hash = result.get('combo_hash')
+            if combo_hash is not None and combo_hash != last_combo_hash:
+                combo_img = result.get('combo_img')
+                if combo_img is not None:
+                    # Preprocess before OCR
+                    processed_combo = self.ocr_calibrator.preprocess_for_ocr(combo_img, 'combo', self.current_ocr_settings['combo'])
+                    combo_val = self.recognition_system.recognize_combo(processed_combo, frame_num)
+                    if combo_val is not None:
+                        last_combo_value = combo_val
+                last_combo_hash = combo_hash
+            current_data_point['combo'] = last_combo_value
+
+            # Process Accuracy
+            acc_hash = result.get('acc_hash')
+            if acc_hash is not None and acc_hash != last_acc_hash:
+                acc_img = result.get('acc_img')
+                if acc_img is not None:
+                    # Preprocess before OCR
+                    processed_acc = self.ocr_calibrator.preprocess_for_ocr(acc_img, 'accuracy', self.current_ocr_settings['accuracy'])
+                    acc_val = self.recognition_system.recognize_accuracy(processed_acc, frame_num)
+                    if acc_val is not None:
+                        last_acc_value = acc_val
+                last_acc_hash = acc_hash
+            current_data_point['accuracy'] = last_acc_value
+            # --- END BUG FIX ---
+
             self.analysis_data["data_points"].append(current_data_point)
 
         # Finalize any remaining active circles

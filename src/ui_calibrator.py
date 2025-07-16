@@ -24,7 +24,7 @@ class UICalibrator:
         self.width = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         self.height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-        self.output_dir = Path("saves/overlay")
+        self.output_dir = Path("src/saves/overlay")
         os.makedirs(self.output_dir, exist_ok=True)
 
         self.calibration_data = self._load_calibration_data()
@@ -127,6 +127,19 @@ class UICalibrator:
                         region_calibrated = True
                     else:
                         print("  No valid region selected.")
+                # --- BUG FIX: Add frame skipping with 'm' and 'n' ---
+                elif key == ord('m'):
+                    current_frame_pos = min(self.total_frames - 1, current_frame_pos + 30) # Skip 1 second
+                    self.cap.set(cv2.CAP_PROP_POS_FRAMES, current_frame_pos)
+                    ret, frame = self.cap.read()
+                    if not ret: print("End of video reached.")
+                elif key == ord('n'):
+                    current_frame_pos = max(0, current_frame_pos - 30) # Go back 1 second
+                    self.cap.set(cv2.CAP_PROP_POS_FRAMES, current_frame_pos)
+                    ret, frame = self.cap.read()
+                    if not ret: print("Start of video reached.")
+                # --- END BUG FIX ---
+
 
         self.ui_regions = temp_regions
         self.calibration_data['ui_regions'] = self.ui_regions

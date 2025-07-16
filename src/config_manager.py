@@ -4,7 +4,7 @@ from typing import Dict, Any, Optional, List
 from pathlib import Path
 
 class ConfigManager:
-    def __init__(self, config_dir="saves/overlay"):
+    def __init__(self, config_dir="src/saves/overlay"):
         self.config_dir = Path(config_dir)
         os.makedirs(self.config_dir, exist_ok=True)
         self.presets_file = self.config_dir / "ocr_presets.json"

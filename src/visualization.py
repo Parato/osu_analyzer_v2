@@ -26,7 +26,8 @@ class Visualization:
         self.height = self.video_info.get('height', 1080)
         self.fps = self.video_info.get('fps', 30)
 
-        self.output_dir = Path("saves/result/analysis_debug.json")
+        # BUG FIX: Correct the path to the calibration data directory
+        self.output_dir = Path("src/saves/overlay")
 
     def create_data_plot(self):
         """Creates and saves a plot of combo, accuracy, and hit locations."""
@@ -42,38 +43,46 @@ class Visualization:
         acc_values = [float(str(dp['accuracy']).replace('%', '')) for dp in data_points if
                       dp.get('accuracy') is not None]
 
-        circle_x = [c['x'] for c in hit_circles]
+        # Get hit circle spawn timestamps for the x-axis of the scatter plot
+        circle_timestamps = [c['start_ts'] for c in hit_circles]
         circle_y = [c['y'] for c in hit_circles]
 
-        if not timestamps_combo and not timestamps_acc and not circle_x:
+
+        if not timestamps_combo and not timestamps_acc and not circle_timestamps:
             print("No data available to generate graphs.")
             return
 
-        fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(12, 12), sharex=True)
+        fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(15, 10), sharex=True, gridspec_kw={'height_ratios': [2, 2, 1]})
         fig.suptitle('osu! Gameplay Analysis', fontsize=16)
 
         # Plot Combo
-        ax1.plot(timestamps_combo, combo_values, label='Combo', color='deepskyblue')
+        ax1.plot(timestamps_combo, combo_values, label='Combo', color='deepskyblue', marker='.', linestyle='-')
         ax1.set_ylabel('Combo Count')
-        ax1.grid(True)
+        ax1.grid(True, which='both', linestyle='--', linewidth=0.5)
+        ax1.legend()
+
 
         # Plot Accuracy
-        ax2.plot(timestamps_acc, acc_values, label='Accuracy', color='limegreen')
+        ax2.plot(timestamps_acc, acc_values, label='Accuracy', color='limegreen', marker='.', linestyle='-')
         ax2.set_ylabel('Accuracy (%)')
-        ax2.set_ylim(min(acc_values) - 1 if acc_values else 90, 100.5)
-        ax2.grid(True)
+        if acc_values:
+            ax2.set_ylim(min(acc_values) - 1 if min(acc_values) < 100 else 99, 100.5)
+        ax2.grid(True, which='both', linestyle='--', linewidth=0.5)
+        ax2.legend()
 
-        # Plot Hit Map
-        ax3.scatter(circle_x, circle_y, alpha=0.6, label='Hit Circles', color='blue')
-        ax3.set_title('Hit Object Spawn Map')
+
+        # Plot Hit Map (as a scatter plot against time)
+        # This shows WHEN objects appear at WHAT Y-coordinate.
+        ax3.scatter(circle_timestamps, circle_y, alpha=0.6, label='Hit Circle Spawns', color='blue', edgecolors='w', s=50)
         ax3.set_xlabel('Time (s)')
         ax3.set_ylabel('Y Coordinate')
-        ax3.set_xlim(0, self.width)
-        ax3.set_ylim(self.height, 0)  # Invert y-axis
-        ax3.set_aspect('equal', adjustable='box')
+        ax3.set_ylim(self.height, 0)  # Invert y-axis to match screen coordinates
+        ax3.grid(True, which='both', linestyle='--', linewidth=0.5)
+        ax3.legend()
+
 
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-        save_path = "saves/result/analysis_plots.png"
+        save_path = "src/saves/result/analysis_plots.png"
         plt.savefig(save_path)
         print(f"Analysis plot saved to {save_path}")
         plt.show()
@@ -93,10 +102,15 @@ class Visualization:
         # Load hit circle radius from calibration data
         calib_path = self.output_dir / "calibration_data.json"
         if not calib_path.exists():
-            print("❌ Calibration data not found. Cannot determine circle size.")
+            print(f"❌ Calibration data not found at '{calib_path}'. Cannot determine circle size.")
             return
         with open(calib_path, 'r') as f:
-            hit_circle_radius = json.load(f).get('hit_circle_params', {}).get('maxRadius', 30)
+            # Use maxRadius as the definitive radius for visualization
+            hit_circle_radius = json.load(f).get('hit_circle_params', {}).get('maxRadius')
+            if not hit_circle_radius:
+                print("❌ 'maxRadius' not found in calibration data. Cannot determine circle size.")
+                return
+
 
         cap = cv2.VideoCapture(self.video_path)
         if not cap.isOpened():
