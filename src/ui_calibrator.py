@@ -24,7 +24,7 @@ class UICalibrator:
         self.width = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         self.height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-        self.output_dir = Path("src/debug_output")
+        self.output_dir = Path("saves/overlay")
         os.makedirs(self.output_dir, exist_ok=True)
 
         self.calibration_data = self._load_calibration_data()

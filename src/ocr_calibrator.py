@@ -22,7 +22,7 @@ class OCRCalibrator:
             raise ValueError(f"Could not open video: {video_path}")
 
         self.total_frames = int(self.cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        self.output_dir = Path("src/debug_output")
+        self.output_dir = Path("saves/overlay")
 
         self.calibration_data = self._load_calibration_data()
         self.ui_regions = self.calibration_data.get('ui_regions', {})

@@ -27,9 +27,9 @@ class OsuAnalysisLauncher:
     """Main class to launch and manage the analysis tool."""
 
     def __init__(self):
-        self.current_dir = Path("src")
-        self.config_file = Path("src/debug_output") / "calibration_data.json"
-        self.analysis_file = Path("src/debug_output") / "analysis_debug.json"
+        self.current_dir = Path("")
+        self.config_file = Path("saves/overlay") / "calibration_data.json"
+        self.analysis_file = Path("saves/result") / "analysis_debug.json"
         self.config_manager = ConfigManager()
 
     def find_videos(self) -> list[str]:

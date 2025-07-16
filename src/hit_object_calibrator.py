@@ -21,7 +21,7 @@ class HitObjectCalibrator:
             raise ValueError(f"Could not open video: {video_path}")
 
         self.total_frames = int(self.cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        self.output_dir = Path("src/debug_output")
+        self.output_dir = Path("saves/overlay")
         os.makedirs(self.output_dir, exist_ok=True)
 
         self.calibration_data = self._load_calibration_data()

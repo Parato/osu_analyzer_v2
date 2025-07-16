@@ -26,7 +26,7 @@ class Visualization:
         self.height = self.video_info.get('height', 1080)
         self.fps = self.video_info.get('fps', 30)
 
-        self.output_dir = Path("src/debug_output")
+        self.output_dir = Path("saves/result/analysis_debug.json")
 
     def create_data_plot(self):
         """Creates and saves a plot of combo, accuracy, and hit locations."""
@@ -73,7 +73,7 @@ class Visualization:
         ax3.set_aspect('equal', adjustable='box')
 
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-        save_path = self.output_dir / "analysis_plots.png"
+        save_path = "saves/result/analysis_plots.png"
         plt.savefig(save_path)
         print(f"Analysis plot saved to {save_path}")
         plt.show()

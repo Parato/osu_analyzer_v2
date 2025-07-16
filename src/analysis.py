@@ -37,7 +37,7 @@ class AnalysisEngine:
         self.height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         self.cap.release()
 
-        self.output_dir = Path("src/debug_output")
+        self.output_dir = Path("saves/overlay")
         self.recognition_system = OsuRecognitionSystem(debug_mode=True)
 
         # Load calibration and OCR settings
@@ -122,7 +122,11 @@ class AnalysisEngine:
         self.process_detection_results(detection_results)
 
         # 3. Save final data
-        analysis_data_path = self.output_dir / "analysis_debug.json"
+        # Ensure the output directory exists
+        analysis_output_dir = Path("saves/result")
+        analysis_output_dir.mkdir(parents=True, exist_ok=True)  # Create the directory if it doesn't exist
+
+        analysis_data_path = analysis_output_dir / "analysis_debug.json"  # Specify the full file path
         with open(analysis_data_path, 'w') as f:
             json.dump(self.analysis_data, f, indent=4)
         print(f"Analysis data saved to {analysis_data_path}")
