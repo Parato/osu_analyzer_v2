@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from typing import Dict
 
 # --- Constants for replay ---
-APPROACH_CIRCLE_START_SCALE = 1.5
+APPROACH_CIRCLE_START_SCALE = 2.2
 
 
 class Visualization:
@@ -26,15 +26,14 @@ class Visualization:
         self.height = self.video_info.get('height', 1080)
         self.fps = self.video_info.get('fps', 30)
 
-        # BUG FIX: Correct the path to the calibration data directory
         self.output_dir = Path("src/saves/overlay")
 
     def create_data_plot(self):
-        """Creates and saves a plot of combo, accuracy, and hit locations."""
+        """Creates and saves a plot of combo, accuracy, and the estimated star rating."""
         print("Generating analysis graphs...")
 
         data_points = self.analysis_data.get('data_points', [])
-        hit_circles = self.analysis_data.get('hit_circles', [])
+        star_rating = self.analysis_data.get('star_rating', 0.0)
 
         timestamps_combo = [dp['timestamp'] for dp in data_points if dp.get('combo') is not None]
         combo_values = [dp['combo'] for dp in data_points if dp.get('combo') is not None]
@@ -43,17 +42,15 @@ class Visualization:
         acc_values = [float(str(dp['accuracy']).replace('%', '')) for dp in data_points if
                       dp.get('accuracy') is not None]
 
-        # Get hit circle spawn timestamps for the x-axis of the scatter plot
-        circle_timestamps = [c['start_ts'] for c in hit_circles]
-        circle_y = [c['y'] for c in hit_circles]
+        if not timestamps_combo and not timestamps_acc:
+            print("No combo or accuracy data available to generate graphs.")
+            if star_rating == 0.0:
+                return
 
-
-        if not timestamps_combo and not timestamps_acc and not circle_timestamps:
-            print("No data available to generate graphs.")
-            return
-
-        fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(15, 10), sharex=True, gridspec_kw={'height_ratios': [2, 2, 1]})
-        fig.suptitle('osu! Gameplay Analysis', fontsize=16)
+        # Changed from 3 subplots to 2
+        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 8), sharex=True)
+        # Added star rating to title
+        fig.suptitle(f'osu! Gameplay Analysis - Estimated ★ {star_rating:.2f}', fontsize=16)
 
         # Plot Combo
         ax1.plot(timestamps_combo, combo_values, label='Combo', color='deepskyblue', marker='.', linestyle='-')
@@ -61,25 +58,14 @@ class Visualization:
         ax1.grid(True, which='both', linestyle='--', linewidth=0.5)
         ax1.legend()
 
-
         # Plot Accuracy
         ax2.plot(timestamps_acc, acc_values, label='Accuracy', color='limegreen', marker='.', linestyle='-')
         ax2.set_ylabel('Accuracy (%)')
+        ax2.set_xlabel('Time (s)') # Added X label here since it's the bottom plot
         if acc_values:
             ax2.set_ylim(min(acc_values) - 1 if min(acc_values) < 100 else 99, 100.5)
         ax2.grid(True, which='both', linestyle='--', linewidth=0.5)
         ax2.legend()
-
-
-        # Plot Hit Map (as a scatter plot against time)
-        # This shows WHEN objects appear at WHAT Y-coordinate.
-        ax3.scatter(circle_timestamps, circle_y, alpha=0.6, label='Hit Circle Spawns', color='blue', edgecolors='w', s=50)
-        ax3.set_xlabel('Time (s)')
-        ax3.set_ylabel('Y Coordinate')
-        ax3.set_ylim(self.height, 0)  # Invert y-axis to match screen coordinates
-        ax3.grid(True, which='both', linestyle='--', linewidth=0.5)
-        ax3.legend()
-
 
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
         save_path = "src/saves/result/analysis_plots.png"
@@ -94,23 +80,24 @@ class Visualization:
             print("❌ Video path from analysis file not found. Cannot start replay.")
             return
 
-        hit_circles = self.analysis_data.get('hit_circles', [])
-        if not hit_circles:
-            print("No hit objects to display.")
+        hit_objects = self.analysis_data.get('hit_objects', [])
+        if not hit_objects:
+            print("\n❌ No hit objects to display in the replay.")
+            print("   This usually means the analysis did not detect any circles.")
+            print(
+                "   Try re-running the '2. Calibrate Hit Circles' step with different parameters or on a different part of the video.")
             return
 
-        # Load hit circle radius from calibration data
         calib_path = self.output_dir / "calibration_data.json"
         if not calib_path.exists():
             print(f"❌ Calibration data not found at '{calib_path}'. Cannot determine circle size.")
             return
         with open(calib_path, 'r') as f:
-            # Use maxRadius as the definitive radius for visualization
-            hit_circle_radius = json.load(f).get('hit_circle_params', {}).get('maxRadius')
+            calib_data = json.load(f)
+            hit_circle_radius = calib_data.get('hit_circle_params', {}).get('maxRadius')
             if not hit_circle_radius:
                 print("❌ 'maxRadius' not found in calibration data. Cannot determine circle size.")
                 return
-
 
         cap = cv2.VideoCapture(self.video_path)
         if not cap.isOpened():
@@ -121,7 +108,7 @@ class Visualization:
         cv2.namedWindow(replay_window, cv2.WINDOW_NORMAL)
         cv2.resizeWindow(replay_window, 1280, 720)
 
-        all_objects = sorted(hit_circles, key=lambda c: c['start_ts'])
+        all_objects = sorted(hit_objects, key=lambda c: c['start_ts'])
         if not all_objects:
             print("No objects to replay.");
             return
@@ -163,32 +150,33 @@ class Visualization:
             current_time_s = current_time_ms / 1000.0
             video_alpha = video_opacity / 100.0
 
-            # PERFORMANCE: Only read and process video frame if opacity is > 0
             if video_alpha > 0:
                 frame_pos = int(current_time_s * self.fps)
                 cap.set(cv2.CAP_PROP_POS_FRAMES, frame_pos)
                 ret, video_frame = cap.read()
                 if not ret:
                     video_frame = np.zeros((self.height, self.width, 3), dtype=np.uint8)
-
-                # Create the canvas by blending the video frame
                 canvas = cv2.addWeighted(video_frame, video_alpha, np.zeros_like(video_frame), 1 - video_alpha, 0)
             else:
-                # If opacity is 0, just create a black canvas without reading the video
                 canvas = np.zeros((self.height, self.width, 3), dtype=np.uint8)
 
             overlay = np.zeros_like(canvas, dtype=np.uint8)
 
-            for circle in hit_circles:
-                start_ts, end_ts = circle['start_ts'], circle['end_ts']
+            for obj in hit_objects:
+                start_ts, end_ts = obj['start_ts'], obj['end_ts']
+
                 if start_ts <= current_time_s < end_ts:
-                    cv2.circle(canvas, (circle['x'], circle['y']), hit_circle_radius, (255, 255, 255), 2)
+                    if obj['type'] == 'circle':
+                        cv2.circle(canvas, (obj['x'], obj['y']), hit_circle_radius, (255, 255, 255), 2)
+
                     duration = end_ts - start_ts
                     if duration > 0:
                         progress = (current_time_s - start_ts) / duration
                         start_radius = int(hit_circle_radius * APPROACH_CIRCLE_START_SCALE)
                         current_radius = int(start_radius + (hit_circle_radius - start_radius) * progress)
-                        cv2.circle(overlay, (circle['x'], circle['y']), current_radius, (255, 0, 0), 2)
+
+                        pos = (obj['x'], obj['y'])
+                        cv2.circle(overlay, pos, current_radius, (255, 0, 0), 2)
 
             final_frame = cv2.add(canvas, overlay)
             play_status = "Playing" if is_playing else "Paused"

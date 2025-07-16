@@ -13,11 +13,10 @@ from pathlib import Path
 from typing import Optional
 
 # Local imports
-import video_processing
+from video_processing import standardize_video_if_needed
 import analysis
 import visualization
 from config_manager import ConfigManager
-# --- New imports for specialized calibrators ---
 from ui_calibrator import UICalibrator
 from hit_object_calibrator import HitObjectCalibrator
 from ocr_calibrator import OCRCalibrator
@@ -56,13 +55,6 @@ class OsuAnalysisLauncher:
             'pytesseract': 'pytesseract',
             'matplotlib': 'matplotlib'
         }
-
-        try:
-            import cv2.ximgproc
-        except ImportError:
-            all_ok = False
-            print("❌ Missing required package for slider path detection: opencv-contrib-python")
-            print("   Please install it by running: pip install opencv-contrib-python")
 
         for module, package in required_modules.items():
             try:
@@ -149,7 +141,7 @@ class OsuAnalysisLauncher:
             self.show_configuration_status()
             print("\nOptions:")
             print("1. Calibrate UI Regions (Combo, Accuracy)")
-            print("2. Calibrate Hit Objects (Circles)")
+            print("2. Calibrate Hit Circles")
             print("3. Live OCR Preview & Create/Edit Preset")
             print("4. Analyze Video")
             print("5. View Hit Object Replay")
@@ -163,7 +155,7 @@ class OsuAnalysisLauncher:
                 if choice in ['1', '2', '3']:
                     video_path = self.select_video()
                     if not video_path: continue
-                    std_path = video_processing.standardize_video_if_needed(video_path)
+                    std_path = standardize_video_if_needed(video_path)
                     if not std_path: continue
 
                     if choice == '1':
@@ -171,7 +163,7 @@ class OsuAnalysisLauncher:
                         calibrator.run()
                     elif choice == '2':
                         calibrator = HitObjectCalibrator(std_path, self.config_manager)
-                        calibrator.run()
+                        calibrator.run_circle_calibration()
                     elif choice == '3':
                         calibrator = OCRCalibrator(std_path, self.config_manager)
                         calibrator.run()
@@ -179,7 +171,7 @@ class OsuAnalysisLauncher:
                 elif choice == '4':
                     video_path = self.select_video()
                     if not video_path: continue
-                    std_path = video_processing.standardize_video_if_needed(video_path)
+                    std_path = standardize_video_if_needed(video_path)
                     if not std_path: continue
                     preset_name = self.select_ocr_preset()
                     engine = analysis.AnalysisEngine(std_path, preset_name, self.config_manager)

@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Dict, Optional
 import multiprocessing
 
+
 def standardize_video_if_needed(video_path: str) -> Optional[str]:
     """
     Checks video properties and re-encodes to 1920x1080 @ 30fps, overwriting the original.
@@ -74,7 +75,9 @@ def standardize_video_if_needed(video_path: str) -> Optional[str]:
             os.remove(temp_output_path)
         return None
 
-def detection_worker(video_path: str, ui_regions: Dict, hit_circle_params: Dict, frame_queue: multiprocessing.Queue, result_queue: multiprocessing.Queue):
+
+def detection_worker(video_path: str, ui_regions: Dict, hit_circle_params: Dict, frame_queue: multiprocessing.Queue,
+                     result_queue: multiprocessing.Queue):
     """
     A worker process that takes frames from a queue, performs detection, and puts results in another queue.
     This function is designed to be stateless and only perform detection on a single frame.
@@ -93,22 +96,52 @@ def detection_worker(video_path: str, ui_regions: Dict, hit_circle_params: Dict,
         if not ret:
             continue
 
-        result = {'frame': frame_num, 'circles': [], 'combo_hash': None, 'acc_hash': None, 'combo_img': None, 'acc_img': None}
+        result = {'frame': frame_num, 'circles': [], 'combo_hash': None, 'acc_hash': None, 'combo_img': None,
+                  'acc_img': None}
 
-        # --- Hit Circle Detection ---
+        # --- Hit Circle Detection with Completeness Filter ---
         if hit_circle_params:
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             gray = cv2.medianBlur(gray, 5)
             p = hit_circle_params
+
             detected_circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1, 20,
                                                 param1=p.get('param1', 50), param2=p.get('param2', 30),
                                                 minRadius=p.get('minRadius', 10), maxRadius=p.get('maxRadius', 50))
+
             if detected_circles is not None:
-                result['circles'] = np.uint16(np.around(detected_circles))[0, :].tolist()
+                completeness_thresh_percent = p.get('completeness')
+
+                # If completeness is not set in config, or if it's set to >=100, disable the filter
+                if completeness_thresh_percent is None or completeness_thresh_percent >= 100:
+                    result['circles'] = np.uint16(np.around(detected_circles))[0, :].tolist()
+                else:
+                    completeness_thresh = completeness_thresh_percent / 100.0
+                    canny_edges = cv2.Canny(gray, 50, 150)
+                    valid_circles = []
+
+                    for c in detected_circles[0, :]:
+                        center = (int(c[0]), int(c[1]))
+                        radius = int(c[2])
+
+                        circumference_mask = np.zeros(gray.shape, dtype=np.uint8)
+                        cv2.circle(circumference_mask, center, radius, 255, 2)
+
+                        total_circumference_pixels = np.count_nonzero(circumference_mask)
+                        if total_circumference_pixels == 0: continue
+
+                        edge_overlap_mask = cv2.bitwise_and(canny_edges, circumference_mask)
+                        actual_edge_pixels = np.count_nonzero(edge_overlap_mask)
+
+                        completeness_score = actual_edge_pixels / total_circumference_pixels
+
+                        if completeness_score >= completeness_thresh:
+                            valid_circles.append(c)
+
+                    if valid_circles:
+                        result['circles'] = np.uint16(np.around(valid_circles)).tolist()
 
         # --- Selective OCR Hashing ---
-        # Instead of doing full OCR here, we get the region image and its hash.
-        # The main process will decide if OCR is needed.
         combo_coords = ui_regions.get('combo')
         if combo_coords:
             x, y, w, h = combo_coords
