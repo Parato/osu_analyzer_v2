@@ -1,0 +1,34 @@
+{
+    "whitecat": {
+        "combo": {
+            "threshold_type": "ADAPTIVE_GAUSS",
+            "threshold_mode": "THRESH_BINARY",
+            "block_size": 41,
+            "C_value": -105,
+            "dilate_kernel_size": 4,
+            "dilate_iterations": 1,
+            "median_blur_ksize": 3,
+            "fill_contours": 0,
+            "morph_close_kernel": 0,
+            "threshold_value": 159,
+            "final_invert": 0
+        },
+        "accuracy": {
+            "threshold_type": "ADAPTIVE_GAUSS",
+            "threshold_mode": "THRESH_BINARY",
+            "block_size": 31,
+            "C_value": -35,
+            "gaussian_blur_ksize": [
+                3,
+                3
+            ],
+            "fill_contours": 0,
+            "morph_close_kernel": 0,
+            "threshold_value": 127,
+            "median_blur_ksize": 0,
+            "dilate_kernel_size": 2,
+            "dilate_iterations": 1,
+            "final_invert": 0
+        }
+    }
+}

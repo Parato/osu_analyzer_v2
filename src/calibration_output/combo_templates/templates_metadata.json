@@ -1,0 +1,122 @@
+{
+  "0": [
+    {
+      "path": "calibration_output/combo_templates\\0\\0_0.png",
+      "source_frame": 1800,
+      "roi_in_combo": [
+        170,
+        3,
+        220,
+        65
+      ]
+    }
+  ],
+  "1": [
+    {
+      "path": "calibration_output/combo_templates\\1\\1_0.png",
+      "source_frame": 1800,
+      "roi_in_combo": [
+        21,
+        3,
+        38,
+        66
+      ]
+    }
+  ],
+  "2": [
+    {
+      "path": "calibration_output/combo_templates\\2\\2_0.png",
+      "source_frame": 400,
+      "roi_in_combo": [
+        121,
+        0,
+        169,
+        66
+      ]
+    }
+  ],
+  "3": [
+    {
+      "path": "calibration_output/combo_templates\\3\\3_0.png",
+      "source_frame": 521,
+      "roi_in_combo": [
+        113,
+        1,
+        159,
+        67
+      ]
+    }
+  ],
+  "4": [
+    {
+      "path": "calibration_output/combo_templates\\4\\4_0.png",
+      "source_frame": 1148,
+      "roi_in_combo": [
+        167,
+        0,
+        220,
+        66
+      ]
+    }
+  ],
+  "5": [
+    {
+      "path": "calibration_output/combo_templates\\5\\5_0.png",
+      "source_frame": 671,
+      "roi_in_combo": [
+        59,
+        1,
+        108,
+        66
+      ]
+    }
+  ],
+  "6": [
+    {
+      "path": "calibration_output/combo_templates\\6\\6_0.png",
+      "source_frame": 1805,
+      "roi_in_combo": [
+        123,
+        0,
+        178,
+        67
+      ]
+    }
+  ],
+  "7": [
+    {
+      "path": "calibration_output/combo_templates\\7\\7_0.png",
+      "source_frame": 143,
+      "roi_in_combo": [
+        169,
+        1,
+        217,
+        66
+      ]
+    }
+  ],
+  "8": [
+    {
+      "path": "calibration_output/combo_templates\\8\\8_0.png",
+      "source_frame": 2256,
+      "roi_in_combo": [
+        176,
+        1,
+        223,
+        66
+      ]
+    }
+  ],
+  "9": [
+    {
+      "path": "calibration_output/combo_templates\\9\\9_0.png",
+      "source_frame": 1490,
+      "roi_in_combo": [
+        168,
+        0,
+        220,
+        67
+      ]
+    }
+  ]
+}
