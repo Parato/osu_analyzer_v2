@@ -1,0 +1,22 @@
+{
+    "ui_regions": {
+        "combo": [
+            0,
+            974,
+            266,
+            105
+        ],
+        "accuracy": [
+            1780,
+            56,
+            139,
+            46
+        ]
+    },
+    "hit_circle_params": {
+        "param1": 50,
+        "param2": 23,
+        "minRadius": 69,
+        "maxRadius": 76
+    }
+}
