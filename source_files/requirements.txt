@@ -1,0 +1,11 @@
+ultralytics
+torch
+torchvision
+torchaudio
+opencv-python-headless
+numpy
+Pillow
+tqdm
+osrparse
+bezier
+google-cloud-storage
