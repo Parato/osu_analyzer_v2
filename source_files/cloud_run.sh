@@ -117,3 +117,7 @@ else
 fi
 
 echo "--- Skript beendet. ---"
+
+# NEU: Hält das Fenster offen, damit Sie Fehler lesen können.
+read -p "Druecken Sie die [Enter]-Taste, um das Fenster zu schliessen..."
+

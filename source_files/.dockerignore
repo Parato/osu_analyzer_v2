@@ -1,0 +1,38 @@
+# .dockerignore
+
+# This file tells Docker which files and folders to IGNORE when building the image.
+# This keeps the image small and prevents your local data from being bundled with your code.
+
+# Ignore Python virtual environments, which can be very large.
+venv/
+.venv/
+env/
+*/env/
+*/venv/
+
+# Ignore Python cache files and compiled files.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# CRITICAL: Ignore all local data, dataset, and results folders.
+# The application code will access this data from GCS, not from inside the image.
+data/
+google-cloud-sdk/
+datasets/
+individual_sets/
+runs/
+annotations/
+
+# Ignore IDE and editor specific configuration folders.
+.idea/
+.vscode/
+
+# Ignore Git version control files.
+.git/
+.gitignore
+
+# Ignore other common miscellaneous files.
+*.DS_Store
+*.log

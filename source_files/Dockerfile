@@ -20,6 +20,9 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
+# --- KORREKTUR: Erstelle eine Verknüpfung, damit der Befehl 'python' auf 'python3' verweist ---
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 # Copy the requirements file first to leverage Docker layer caching
 COPY requirements.txt .
 
@@ -31,5 +34,3 @@ COPY . .
 
 # This container can be used for both data generation and training.
 # The entry point will be specified in the Vertex AI job submission command.
-# For example, for data generation: CMD ["python", "master_pipeline.py", "--base-gcs-bucket", "gs://your-bucket"]
-# For training: CMD ["python", "train.py", "--data", "gs://...", "--gcs-output-path", "gs://..."]

@@ -491,6 +491,11 @@ def main():
 
     print_status(f"Found {len(beatmaps)} beatmaps, {len(skins)} skins, {len(background_images)} backgrounds in GCS.")
 
+    if not skins:
+        print_status("FATAL: No skin folders were found in GCS. The script cannot continue.", level="ERROR")
+        print_status(f"Please ensure you have at least one skin sub-folder inside: {SOURCE_SKINS_DIR}", level="ERROR")
+        return  # Exit gracefully
+
     print_status("Partitioning beatmaps for training and validation sets...")
     random.shuffle(beatmaps)
     split_index = int(len(beatmaps) * VALIDATION_SPLIT)

@@ -4,7 +4,8 @@
 # UPDATED: Added Hard Rock (HR) and Double Time (DT) modification logic.
 # FIXED: Resolved final type warnings by using float literals in HR difficulty calculations.
 # MODIFIED: Now parses StackLeniency from the [General] section.
-# FIXED: Removed HR coordinate flipping from the parser to fix a bug. This is now handled in the dataset generator.
+# FIXED: Removed HR coordinate flipping from the parser to fix a bug.
+# MODIFIED FOR GCS: Now accepts an optional 'content' argument to parse from a string.
 
 from utils import print_status
 import numpy as np
@@ -54,10 +55,11 @@ def od_ms_to_val(od_300_ms):
     return (80.0 - od_300_ms) / 6.0
 
 
-def parse_beatmap(beatmap_path, apply_hr=False, apply_dt=False):
+def parse_beatmap(beatmap_path, content=None, apply_hr=False, apply_dt=False):
     """
     Parses the .osu file to extract hit object, difficulty, and timing data.
     Optionally applies Hard Rock (HR) and Double Time (DT) modifications.
+    It can parse from a file path or from a string provided in the 'content' argument.
     """
     print_status(f"Parsing beatmap: {beatmap_path}")
 
@@ -74,111 +76,120 @@ def parse_beatmap(beatmap_path, apply_hr=False, apply_dt=False):
     in_hit_objects_section = False
 
     try:
-        with open(beatmap_path, 'r', encoding='utf-8') as f:
-            combo_number = 1
-            for line in f:
-                line = line.strip()
-                if not line: continue
+        # --- START OF GCS CORRECTION ---
+        # If content is provided as a string from GCS, use it.
+        # Otherwise, read from the local file path.
+        lines_to_process = []
+        if content:
+            lines_to_process = content.splitlines()
+        else:
+            with open(beatmap_path, 'r', encoding='utf-8') as f:
+                lines_to_process = f.readlines()
+        # --- END OF GCS CORRECTION ---
 
-                # Section handling
-                if line == '[General]':
-                    in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = True, False, False, False, False
-                    continue
-                elif line == '[Difficulty]':
-                    in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, True, False, False, False
-                    continue
-                elif line == '[TimingPoints]':
-                    in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, True, False, False
-                    continue
-                elif line == '[Colours]':
-                    in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, False, True, False
-                    continue
-                elif line == '[HitObjects]':
-                    in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, False, False, True
-                    continue
-                elif line.startswith('['):
-                    in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, False, False, False
-                    continue
+        combo_number = 1
+        for line in lines_to_process:
+            line = line.strip()
+            if not line: continue
 
-                # Data parsing based on section
-                if in_general_section:
-                    parts = line.split(':')
-                    if len(parts) == 2:
-                        key = parts[0].strip()
-                        if key == 'StackLeniency':
-                            difficulty['StackLeniency'] = float(parts[1].strip())
+            # Section handling
+            if line == '[General]':
+                in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = True, False, False, False, False
+                continue
+            elif line == '[Difficulty]':
+                in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, True, False, False, False
+                continue
+            elif line == '[TimingPoints]':
+                in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, True, False, False
+                continue
+            elif line == '[Colours]':
+                in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, False, True, False
+                continue
+            elif line == '[HitObjects]':
+                in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, False, False, True
+                continue
+            elif line.startswith('['):
+                in_general_section, in_difficulty_section, in_timing_points_section, in_colors_section, in_hit_objects_section = False, False, False, False, False
+                continue
 
-                elif in_difficulty_section:
-                    parts = line.split(':')
-                    if len(parts) == 2:
-                        key = parts[0].strip()
-                        value = float(parts[1].strip())
-                        difficulty[key] = value
+            # Data parsing based on section
+            if in_general_section:
+                parts = line.split(':')
+                if len(parts) == 2:
+                    key = parts[0].strip()
+                    if key == 'StackLeniency':
+                        difficulty['StackLeniency'] = float(parts[1].strip())
 
-                elif in_timing_points_section:
-                    parts = line.split(',')
-                    if len(parts) >= 2:
-                        timing_points.append({
-                            'time': int(float(parts[0])),
-                            'beat_length': float(parts[1]),
-                            'uninherited': len(parts) > 6 and int(parts[6]) == 1
-                        })
+            elif in_difficulty_section:
+                parts = line.split(':')
+                if len(parts) == 2:
+                    key = parts[0].strip()
+                    value = float(parts[1].strip())
+                    difficulty[key] = value
 
-                elif in_colors_section:
-                    parts = line.split(':')
-                    if len(parts) == 2 and parts[0].strip().startswith('Combo'):
-                        rgb_parts = parts[1].strip().split(',')
-                        if len(rgb_parts) == 3:
-                            combo_colors.append(tuple(int(p.strip()) for p in rgb_parts))
+            elif in_timing_points_section:
+                parts = line.split(',')
+                if len(parts) >= 2:
+                    timing_points.append({
+                        'time': int(float(parts[0])),
+                        'beat_length': float(parts[1]),
+                        'uninherited': len(parts) > 6 and int(parts[6]) == 1
+                    })
 
-                elif in_hit_objects_section:
-                    parts = line.split(',')
-                    if len(parts) >= 5:
-                        obj_type_int = int(parts[3])
-                        is_new_combo = bool((obj_type_int >> 2) & 1)
+            elif in_colors_section:
+                parts = line.split(':')
+                if len(parts) == 2 and parts[0].strip().startswith('Combo'):
+                    rgb_parts = parts[1].strip().split(',')
+                    if len(rgb_parts) == 3:
+                        combo_colors.append(tuple(int(p.strip()) for p in rgb_parts))
 
-                        if is_new_combo:
-                            combo_number = 1
+            elif in_hit_objects_section:
+                parts = line.split(',')
+                if len(parts) >= 5:
+                    obj_type_int = int(parts[3])
+                    is_new_combo = bool((obj_type_int >> 2) & 1)
 
-                        obj = {
-                            'x': int(parts[0]), 'y': int(parts[1]),
-                            'time': int(float(parts[2])),
-                            'type': obj_type_int,
-                            'new_combo': is_new_combo,
-                            'is_slider': bool((obj_type_int >> 1) & 1),
-                            'is_spinner': bool((obj_type_int >> 3) & 1),
-                            'combo_number': combo_number,
-                            'hit': False
-                        }
+                    if is_new_combo:
+                        combo_number = 1
 
-                        if obj['is_slider']:
-                            obj['slides'] = int(parts[6])
-                            obj['length'] = float(parts[7])
-                            try:
-                                curve_points_str = parts[5]
-                                points_str_list = curve_points_str.split('|')
-                                control_points = [(obj['x'], obj['y'])]
-                                for p_str in points_str_list[1:]:
-                                    p_parts = p_str.split(':')
-                                    control_points.append((int(p_parts[0]), int(p_parts[1])))
-                                nodes = np.asfortranarray(control_points).T
-                                obj['curve'] = bezier.Curve(nodes, degree=len(control_points) - 1)
-                            except Exception as e:
-                                print_status(f"Could not parse slider curve for object at time {obj['time']}: {e}",
-                                             level="WARN")
-                                obj['curve'] = None
-                        elif obj['is_spinner']:
-                            obj['end_time'] = int(float(parts[5]))
+                    obj = {
+                        'x': int(parts[0]), 'y': int(parts[1]),
+                        'time': int(float(parts[2])),
+                        'type': obj_type_int,
+                        'new_combo': is_new_combo,
+                        'is_slider': bool((obj_type_int >> 1) & 1),
+                        'is_spinner': bool((obj_type_int >> 3) & 1),
+                        'combo_number': combo_number,
+                        'hit': False
+                    }
 
-                        hit_objects.append(obj)
-                        combo_number += 1
+                    if obj['is_slider']:
+                        obj['slides'] = int(parts[6])
+                        obj['length'] = float(parts[7])
+                        try:
+                            curve_points_str = parts[5]
+                            points_str_list = curve_points_str.split('|')
+                            control_points = [(obj['x'], obj['y'])]
+                            for p_str in points_str_list[1:]:
+                                p_parts = p_str.split(':')
+                                control_points.append((int(p_parts[0]), int(p_parts[1])))
+                            nodes = np.asfortranarray(control_points).T
+                            obj['curve'] = bezier.Curve(nodes, degree=len(control_points) - 1)
+                        except Exception as e:
+                            print_status(f"Could not parse slider curve for object at time {obj['time']}: {e}",
+                                         level="WARN")
+                            obj['curve'] = None
+                    elif obj['is_spinner']:
+                        obj['end_time'] = int(float(parts[5]))
+
+                    hit_objects.append(obj)
+                    combo_number += 1
 
         if 'StackLeniency' not in difficulty:
             difficulty['StackLeniency'] = 0.7
 
         if apply_hr:
             print_status("Applying Hard Rock (HR) modifications to beatmap data...", level="INFO")
-
             difficulty['CircleSize'] = min(10.0, difficulty.get('CircleSize', 4) * 1.3)
             difficulty['ApproachRate'] = min(10.0, difficulty.get('ApproachRate', 9) * 1.4)
             difficulty['OverallDifficulty'] = min(10.0, difficulty.get('OverallDifficulty', 8) * 1.4)
@@ -188,31 +199,22 @@ def parse_beatmap(beatmap_path, apply_hr=False, apply_dt=False):
         if apply_dt:
             print_status("Applying Double Time (DT) modifications to beatmap data...", level="INFO")
             dt_rate = 1.5
-
-            # Modify time values for all objects and timing points
             for obj in hit_objects:
                 obj['time'] = obj['time'] / dt_rate
                 if obj.get('is_spinner'):
                     obj['end_time'] = obj['end_time'] / dt_rate
-
             for tp in timing_points:
                 tp['time'] = tp['time'] / dt_rate
-                # Only inherited points (negative beat_length) are not affected by DT rate
                 if tp['beat_length'] > 0:
                     tp['beat_length'] = tp['beat_length'] / dt_rate
-
-            # Recalculate AR and OD
             ar = difficulty.get('ApproachRate', 9)
             od = difficulty.get('OverallDifficulty', 8)
-
             ar_ms = get_ar_ms(ar) / dt_rate
             od_300_ms = (80.0 - 6.0 * od) / dt_rate
-
             difficulty['ApproachRate'] = min(11.0, ar_ms_to_val(ar_ms))
             difficulty['OverallDifficulty'] = min(11.0, od_ms_to_val(od_300_ms))
             print_status(f"DT difficulty: {difficulty}")
 
-        # Final calculation for timing windows based on the final OD
         if 'OverallDifficulty' in difficulty:
             timing_windows = get_timing_windows(difficulty['OverallDifficulty'])
 
@@ -224,5 +226,5 @@ def parse_beatmap(beatmap_path, apply_hr=False, apply_dt=False):
         print_status(f"Beatmap file not found at: {beatmap_path}", level="ERROR")
         return None, None, None, None, None
     except Exception as e:
-        print_status(f"An error occurred while parsing beatmap: {e}", level="ERROR")
+        print_status(f"An error occurred while parsing beatmap '{beatmap_path}': {e}", level="ERROR")
         return None, None, None, None, None
