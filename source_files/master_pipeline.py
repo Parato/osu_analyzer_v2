@@ -85,8 +85,8 @@ def list_gcs_dirs(gcs_path):
     # --- ENDE DER KORREKTUR ---
 
     blobs = client.list_blobs(bucket_name, prefix=prefix, delimiter='/')
-    # The prefixes property will be populated with the subdirectories
-    return [p for p in blobs.prefixes]
+    # The prefixes property returns relative paths; we must prepend the bucket URI.
+    return [f"gs://{bucket_name}/{p}" for p in blobs.prefixes]
 
 
 def rename_gcs_blob(source_gcs_path, dest_gcs_path):
