@@ -1,0 +1,9386 @@
+[
+    {
+        "id": 0,
+        "class": "slider_head",
+        "spawn_frame": 0,
+        "despawn_frame": 71,
+        "location": [
+            1887,
+            894
+        ],
+        "box": [
+            1855,
+            709,
+            65,
+            370
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 3,
+        "class": "slider_head",
+        "spawn_frame": 71,
+        "despawn_frame": 71,
+        "location": [
+            1875,
+            368
+        ],
+        "box": [
+            1831,
+            152,
+            89,
+            432
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 4,
+        "class": "slider_head",
+        "spawn_frame": 73,
+        "despawn_frame": 73,
+        "location": [
+            1862,
+            124
+        ],
+        "box": [
+            1805,
+            0,
+            114,
+            249
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 9,
+        "class": "hit_circle",
+        "spawn_frame": 179,
+        "despawn_frame": 183,
+        "location": [
+            565,
+            292
+        ],
+        "box": [
+            473,
+            198,
+            185,
+            188
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 11,
+        "class": "slider_head",
+        "spawn_frame": 187,
+        "despawn_frame": 232,
+        "location": [
+            574,
+            287
+        ],
+        "box": [
+            464,
+            176,
+            221,
+            223
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 12,
+        "class": "slider_head",
+        "spawn_frame": 201,
+        "despawn_frame": 201,
+        "location": [
+            973,
+            445
+        ],
+        "box": [
+            883,
+            354,
+            181,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 13,
+        "class": "hit_circle",
+        "spawn_frame": 209,
+        "despawn_frame": 224,
+        "location": [
+            978,
+            452
+        ],
+        "box": [
+            889,
+            364,
+            179,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 14,
+        "class": "hit_circle",
+        "spawn_frame": 224,
+        "despawn_frame": 235,
+        "location": [
+            1285,
+            327
+        ],
+        "box": [
+            1193,
+            239,
+            184,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 15,
+        "class": "slider_head",
+        "spawn_frame": 224,
+        "despawn_frame": 264,
+        "location": [
+            1078,
+            443
+        ],
+        "box": [
+            942,
+            347,
+            272,
+            193
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 16,
+        "class": "slider_head",
+        "spawn_frame": 228,
+        "despawn_frame": 240,
+        "location": [
+            1888,
+            647
+        ],
+        "box": [
+            1857,
+            526,
+            62,
+            242
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 18,
+        "class": "slider_head",
+        "spawn_frame": 237,
+        "despawn_frame": 243,
+        "location": [
+            833,
+            315
+        ],
+        "box": [
+            732,
+            213,
+            202,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 19,
+        "class": "hit_circle",
+        "spawn_frame": 239,
+        "despawn_frame": 257,
+        "location": [
+            1453,
+            600
+        ],
+        "box": [
+            1364,
+            510,
+            179,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 20,
+        "class": "slider_head",
+        "spawn_frame": 240,
+        "despawn_frame": 240,
+        "location": [
+            1453,
+            606
+        ],
+        "box": [
+            1364,
+            516,
+            178,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 22,
+        "class": "slider_head",
+        "spawn_frame": 253,
+        "despawn_frame": 254,
+        "location": [
+            1891,
+            641
+        ],
+        "box": [
+            1863,
+            507,
+            57,
+            269
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 23,
+        "class": "hit_circle",
+        "spawn_frame": 254,
+        "despawn_frame": 302,
+        "location": [
+            1287,
+            868
+        ],
+        "box": [
+            1175,
+            758,
+            224,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 24,
+        "class": "slider_head",
+        "spawn_frame": 260,
+        "despawn_frame": 278,
+        "location": [
+            1294,
+            334
+        ],
+        "box": [
+            1190,
+            232,
+            208,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 25,
+        "class": "hit_circle",
+        "spawn_frame": 261,
+        "despawn_frame": 267,
+        "location": [
+            1103,
+            786
+        ],
+        "box": [
+            1013,
+            699,
+            181,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 26,
+        "class": "slider_head",
+        "spawn_frame": 263,
+        "despawn_frame": 264,
+        "location": [
+            991,
+            451
+        ],
+        "box": [
+            886,
+            351,
+            211,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 27,
+        "class": "slider_head",
+        "spawn_frame": 263,
+        "despawn_frame": 268,
+        "location": [
+            1120,
+            443
+        ],
+        "box": [
+            1026,
+            345,
+            188,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 28,
+        "class": "slider_head",
+        "spawn_frame": 264,
+        "despawn_frame": 294,
+        "location": [
+            1453,
+            606
+        ],
+        "box": [
+            1345,
+            490,
+            216,
+            232
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 29,
+        "class": "slider_head",
+        "spawn_frame": 268,
+        "despawn_frame": 268,
+        "location": [
+            1891,
+            637
+        ],
+        "box": [
+            1864,
+            513,
+            54,
+            248
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 31,
+        "class": "slider_head",
+        "spawn_frame": 279,
+        "despawn_frame": 283,
+        "location": [
+            1322,
+            450
+        ],
+        "box": [
+            1225,
+            350,
+            195,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 33,
+        "class": "slider_head",
+        "spawn_frame": 283,
+        "despawn_frame": 283,
+        "location": [
+            1891,
+            639
+        ],
+        "box": [
+            1865,
+            522,
+            53,
+            235
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 32,
+        "class": "hit_circle",
+        "spawn_frame": 283,
+        "despawn_frame": 316,
+        "location": [
+            649,
+            891
+        ],
+        "box": [
+            561,
+            804,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 35,
+        "class": "slider_head",
+        "spawn_frame": 296,
+        "despawn_frame": 296,
+        "location": [
+            1442,
+            728
+        ],
+        "box": [
+            1342,
+            626,
+            201,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 37,
+        "class": "slider_head",
+        "spawn_frame": 298,
+        "despawn_frame": 298,
+        "location": [
+            1890,
+            638
+        ],
+        "box": [
+            1864,
+            521,
+            53,
+            234
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 36,
+        "class": "hit_circle",
+        "spawn_frame": 298,
+        "despawn_frame": 299,
+        "location": [
+            1440,
+            728
+        ],
+        "box": [
+            1338,
+            626,
+            205,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 38,
+        "class": "slider_head",
+        "spawn_frame": 302,
+        "despawn_frame": 313,
+        "location": [
+            1096,
+            786
+        ],
+        "box": [
+            993,
+            687,
+            207,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 39,
+        "class": "hit_circle",
+        "spawn_frame": 313,
+        "despawn_frame": 317,
+        "location": [
+            453,
+            409
+        ],
+        "box": [
+            347,
+            314,
+            213,
+            190
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 41,
+        "class": "slider_head",
+        "spawn_frame": 315,
+        "despawn_frame": 328,
+        "location": [
+            845,
+            828
+        ],
+        "box": [
+            748,
+            729,
+            194,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 40,
+        "class": "slider_head",
+        "spawn_frame": 315,
+        "despawn_frame": 344,
+        "location": [
+            654,
+            887
+        ],
+        "box": [
+            550,
+            778,
+            208,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 42,
+        "class": "hit_circle",
+        "spawn_frame": 328,
+        "despawn_frame": 338,
+        "location": [
+            757,
+            513
+        ],
+        "box": [
+            666,
+            425,
+            183,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 43,
+        "class": "slider_head",
+        "spawn_frame": 328,
+        "despawn_frame": 339,
+        "location": [
+            1890,
+            699
+        ],
+        "box": [
+            1862,
+            572,
+            56,
+            255
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 44,
+        "class": "hit_circle",
+        "spawn_frame": 334,
+        "despawn_frame": 337,
+        "location": [
+            440,
+            410
+        ],
+        "box": [
+            347,
+            321,
+            187,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 45,
+        "class": "slider_head",
+        "spawn_frame": 342,
+        "despawn_frame": 350,
+        "location": [
+            648,
+            765
+        ],
+        "box": [
+            552,
+            667,
+            193,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 47,
+        "class": "hit_circle",
+        "spawn_frame": 351,
+        "despawn_frame": 353,
+        "location": [
+            645,
+            764
+        ],
+        "box": [
+            547,
+            669,
+            196,
+            190
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 48,
+        "class": "slider_head",
+        "spawn_frame": 351,
+        "despawn_frame": 369,
+        "location": [
+            449,
+            412
+        ],
+        "box": [
+            337,
+            308,
+            225,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 46,
+        "class": "hit_circle",
+        "spawn_frame": 351,
+        "despawn_frame": 398,
+        "location": [
+            1125,
+            286
+        ],
+        "box": [
+            1026,
+            189,
+            198,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 49,
+        "class": "hit_circle",
+        "spawn_frame": 360,
+        "despawn_frame": 388,
+        "location": [
+            1289,
+            414
+        ],
+        "box": [
+            1202,
+            327,
+            174,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 50,
+        "class": "slider_head",
+        "spawn_frame": 364,
+        "despawn_frame": 372,
+        "location": [
+            572,
+            427
+        ],
+        "box": [
+            474,
+            325,
+            197,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 51,
+        "class": "slider_head",
+        "spawn_frame": 368,
+        "despawn_frame": 381,
+        "location": [
+            763,
+            512
+        ],
+        "box": [
+            656,
+            407,
+            215,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 52,
+        "class": "slider_head",
+        "spawn_frame": 373,
+        "despawn_frame": 373,
+        "location": [
+            1890,
+            635
+        ],
+        "box": [
+            1863,
+            503,
+            55,
+            264
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 53,
+        "class": "hit_circle",
+        "spawn_frame": 381,
+        "despawn_frame": 411,
+        "location": [
+            1532,
+            612
+        ],
+        "box": [
+            1445,
+            526,
+            174,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 54,
+        "class": "slider_head",
+        "spawn_frame": 384,
+        "despawn_frame": 394,
+        "location": [
+            1008,
+            453
+        ],
+        "box": [
+            910,
+            357,
+            196,
+            192
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 55,
+        "class": "slider_head",
+        "spawn_frame": 389,
+        "despawn_frame": 420,
+        "location": [
+            1322,
+            423
+        ],
+        "box": [
+            1200,
+            322,
+            245,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 56,
+        "class": "hit_circle",
+        "spawn_frame": 396,
+        "despawn_frame": 396,
+        "location": [
+            1008,
+            453
+        ],
+        "box": [
+            910,
+            356,
+            196,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 58,
+        "class": "hit_circle",
+        "spawn_frame": 403,
+        "despawn_frame": 432,
+        "location": [
+            1387,
+            904
+        ],
+        "box": [
+            1299,
+            816,
+            177,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 59,
+        "class": "slider_head",
+        "spawn_frame": 410,
+        "despawn_frame": 413,
+        "location": [
+            1889,
+            698
+        ],
+        "box": [
+            1862,
+            572,
+            55,
+            253
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 60,
+        "class": "slider_head",
+        "spawn_frame": 411,
+        "despawn_frame": 442,
+        "location": [
+            1534,
+            624
+        ],
+        "box": [
+            1432,
+            516,
+            205,
+            217
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 61,
+        "class": "slider_head",
+        "spawn_frame": 420,
+        "despawn_frame": 421,
+        "location": [
+            1390,
+            426
+        ],
+        "box": [
+            1254,
+            324,
+            272,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 62,
+        "class": "slider_head",
+        "spawn_frame": 421,
+        "despawn_frame": 422,
+        "location": [
+            1439,
+            430
+        ],
+        "box": [
+            1353,
+            331,
+            172,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 64,
+        "class": "hit_circle",
+        "spawn_frame": 433,
+        "despawn_frame": 438,
+        "location": [
+            857,
+            961
+        ],
+        "box": [
+            766,
+            874,
+            182,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 65,
+        "class": "slider_head",
+        "spawn_frame": 433,
+        "despawn_frame": 466,
+        "location": [
+            1388,
+            903
+        ],
+        "box": [
+            1279,
+            800,
+            218,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 66,
+        "class": "slider_head",
+        "spawn_frame": 446,
+        "despawn_frame": 446,
+        "location": [
+            1521,
+            748
+        ],
+        "box": [
+            1420,
+            647,
+            202,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 67,
+        "class": "hit_circle",
+        "spawn_frame": 449,
+        "despawn_frame": 463,
+        "location": [
+            716,
+            685
+        ],
+        "box": [
+            624,
+            596,
+            184,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 68,
+        "class": "slider_head",
+        "spawn_frame": 458,
+        "despawn_frame": 458,
+        "location": [
+            1890,
+            699
+        ],
+        "box": [
+            1862,
+            581,
+            57,
+            236
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 69,
+        "class": "slider_head",
+        "spawn_frame": 466,
+        "despawn_frame": 470,
+        "location": [
+            1262,
+            891
+        ],
+        "box": [
+            1163,
+            792,
+            199,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 70,
+        "class": "slider_head",
+        "spawn_frame": 467,
+        "despawn_frame": 467,
+        "location": [
+            1277,
+            898
+        ],
+        "box": [
+            1161,
+            801,
+            233,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 71,
+        "class": "hit_circle",
+        "spawn_frame": 471,
+        "despawn_frame": 499,
+        "location": [
+            379,
+            527
+        ],
+        "box": [
+            292,
+            440,
+            175,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 73,
+        "class": "hit_circle",
+        "spawn_frame": 472,
+        "despawn_frame": 473,
+        "location": [
+            1260,
+            892
+        ],
+        "box": [
+            1158,
+            791,
+            205,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 72,
+        "class": "slider_head",
+        "spawn_frame": 472,
+        "despawn_frame": 486,
+        "location": [
+            852,
+            949
+        ],
+        "box": [
+            750,
+            844,
+            205,
+            211
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 75,
+        "class": "slider_head",
+        "spawn_frame": 484,
+        "despawn_frame": 484,
+        "location": [
+            850,
+            903
+        ],
+        "box": [
+            746,
+            745,
+            209,
+            317
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 76,
+        "class": "slider_head",
+        "spawn_frame": 484,
+        "despawn_frame": 492,
+        "location": [
+            858,
+            834
+        ],
+        "box": [
+            758,
+            734,
+            200,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 77,
+        "class": "slider_head",
+        "spawn_frame": 485,
+        "despawn_frame": 501,
+        "location": [
+            711,
+            688
+        ],
+        "box": [
+            605,
+            583,
+            212,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 78,
+        "class": "hit_circle",
+        "spawn_frame": 493,
+        "despawn_frame": 496,
+        "location": [
+            858,
+            835
+        ],
+        "box": [
+            756,
+            732,
+            205,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 79,
+        "class": "hit_circle",
+        "spawn_frame": 494,
+        "despawn_frame": 540,
+        "location": [
+            550,
+            263
+        ],
+        "box": [
+            451,
+            165,
+            198,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 80,
+        "class": "slider_head",
+        "spawn_frame": 500,
+        "despawn_frame": 533,
+        "location": [
+            389,
+            523
+        ],
+        "box": [
+            288,
+            413,
+            203,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 81,
+        "class": "hit_circle",
+        "spawn_frame": 501,
+        "despawn_frame": 512,
+        "location": [
+            704,
+            387
+        ],
+        "box": [
+            614,
+            302,
+            180,
+            171
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 82,
+        "class": "slider_head",
+        "spawn_frame": 503,
+        "despawn_frame": 515,
+        "location": [
+            450,
+            721
+        ],
+        "box": [
+            351,
+            624,
+            199,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 83,
+        "class": "hit_circle",
+        "spawn_frame": 506,
+        "despawn_frame": 506,
+        "location": [
+            751,
+            397
+        ],
+        "box": [
+            618,
+            305,
+            266,
+            185
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 84,
+        "class": "hit_circle",
+        "spawn_frame": 523,
+        "despawn_frame": 553,
+        "location": [
+            1131,
+            566
+        ],
+        "box": [
+            1043,
+            479,
+            177,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 86,
+        "class": "slider_head",
+        "spawn_frame": 526,
+        "despawn_frame": 526,
+        "location": [
+            1888,
+            696
+        ],
+        "box": [
+            1862,
+            572,
+            53,
+            248
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 88,
+        "class": "slider_head",
+        "spawn_frame": 533,
+        "despawn_frame": 538,
+        "location": [
+            401,
+            403
+        ],
+        "box": [
+            302,
+            302,
+            198,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 89,
+        "class": "hit_circle",
+        "spawn_frame": 541,
+        "despawn_frame": 541,
+        "location": [
+            403,
+            401
+        ],
+        "box": [
+            303,
+            300,
+            200,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 90,
+        "class": "slider_head",
+        "spawn_frame": 542,
+        "despawn_frame": 554,
+        "location": [
+            712,
+            395
+        ],
+        "box": [
+            603,
+            289,
+            219,
+            212
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 91,
+        "class": "hit_circle",
+        "spawn_frame": 553,
+        "despawn_frame": 575,
+        "location": [
+            1518,
+            237
+        ],
+        "box": [
+            1428,
+            147,
+            181,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 92,
+        "class": "slider_head",
+        "spawn_frame": 554,
+        "despawn_frame": 587,
+        "location": [
+            1235,
+            563
+        ],
+        "box": [
+            1103,
+            459,
+            265,
+            209
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 93,
+        "class": "slider_head",
+        "spawn_frame": 559,
+        "despawn_frame": 566,
+        "location": [
+            953,
+            453
+        ],
+        "box": [
+            851,
+            352,
+            205,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 94,
+        "class": "hit_circle",
+        "spawn_frame": 568,
+        "despawn_frame": 577,
+        "location": [
+            1193,
+            147
+        ],
+        "box": [
+            1102,
+            58,
+            182,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 95,
+        "class": "slider_head",
+        "spawn_frame": 573,
+        "despawn_frame": 573,
+        "location": [
+            1885,
+            529
+        ],
+        "box": [
+            1852,
+            458,
+            67,
+            142
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 96,
+        "class": "slider_head",
+        "spawn_frame": 577,
+        "despawn_frame": 579,
+        "location": [
+            1888,
+            699
+        ],
+        "box": [
+            1862,
+            582,
+            52,
+            234
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 99,
+        "class": "slider_head",
+        "spawn_frame": 585,
+        "despawn_frame": 587,
+        "location": [
+            1144,
+            570
+        ],
+        "box": [
+            1032,
+            462,
+            225,
+            217
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 100,
+        "class": "slider_head",
+        "spawn_frame": 585,
+        "despawn_frame": 589,
+        "location": [
+            1269,
+            558
+        ],
+        "box": [
+            1169,
+            455,
+            200,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 101,
+        "class": "slider_head",
+        "spawn_frame": 590,
+        "despawn_frame": 609,
+        "location": [
+            1523,
+            234
+        ],
+        "box": [
+            1424,
+            131,
+            198,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 102,
+        "class": "hit_circle",
+        "spawn_frame": 591,
+        "despawn_frame": 638,
+        "location": [
+            780,
+            309
+        ],
+        "box": [
+            681,
+            209,
+            199,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 103,
+        "class": "hit_circle",
+        "spawn_frame": 598,
+        "despawn_frame": 627,
+        "location": [
+            590,
+            249
+        ],
+        "box": [
+            502,
+            163,
+            176,
+            172
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 104,
+        "class": "hit_circle",
+        "spawn_frame": 608,
+        "despawn_frame": 609,
+        "location": [
+            1519,
+            233
+        ],
+        "box": [
+            1419,
+            130,
+            201,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 105,
+        "class": "slider_head",
+        "spawn_frame": 609,
+        "despawn_frame": 612,
+        "location": [
+            1387,
+            228
+        ],
+        "box": [
+            1287,
+            127,
+            201,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 106,
+        "class": "slider_head",
+        "spawn_frame": 609,
+        "despawn_frame": 621,
+        "location": [
+            1192,
+            149
+        ],
+        "box": [
+            1081,
+            39,
+            223,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 107,
+        "class": "hit_circle",
+        "spawn_frame": 615,
+        "despawn_frame": 615,
+        "location": [
+            1386,
+            226
+        ],
+        "box": [
+            1286,
+            127,
+            200,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 108,
+        "class": "hit_circle",
+        "spawn_frame": 621,
+        "despawn_frame": 649,
+        "location": [
+            425,
+            527
+        ],
+        "box": [
+            337,
+            440,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 109,
+        "class": "slider_head",
+        "spawn_frame": 625,
+        "despawn_frame": 635,
+        "location": [
+            926,
+            170
+        ],
+        "box": [
+            828,
+            73,
+            196,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 110,
+        "class": "slider_head",
+        "spawn_frame": 628,
+        "despawn_frame": 660,
+        "location": [
+            588,
+            261
+        ],
+        "box": [
+            484,
+            155,
+            208,
+            212
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 111,
+        "class": "hit_circle",
+        "spawn_frame": 638,
+        "despawn_frame": 639,
+        "location": [
+            928,
+            171
+        ],
+        "box": [
+            829,
+            72,
+            198,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 112,
+        "class": "hit_circle",
+        "spawn_frame": 643,
+        "despawn_frame": 673,
+        "location": [
+            637,
+            759
+        ],
+        "box": [
+            549,
+            672,
+            176,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 113,
+        "class": "slider_head",
+        "spawn_frame": 650,
+        "despawn_frame": 653,
+        "location": [
+            1890,
+            702
+        ],
+        "box": [
+            1861,
+            581,
+            58,
+            242
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 114,
+        "class": "slider_head",
+        "spawn_frame": 651,
+        "despawn_frame": 682,
+        "location": [
+            432,
+            539
+        ],
+        "box": [
+            328,
+            436,
+            208,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 115,
+        "class": "slider_head",
+        "spawn_frame": 662,
+        "despawn_frame": 664,
+        "location": [
+            570,
+            382
+        ],
+        "box": [
+            471,
+            283,
+            198,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 117,
+        "class": "hit_circle",
+        "spawn_frame": 666,
+        "despawn_frame": 666,
+        "location": [
+            570,
+            382
+        ],
+        "box": [
+            470,
+            283,
+            200,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 118,
+        "class": "hit_circle",
+        "spawn_frame": 673,
+        "despawn_frame": 688,
+        "location": [
+            976,
+            950
+        ],
+        "box": [
+            884,
+            859,
+            184,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 119,
+        "class": "slider_head",
+        "spawn_frame": 674,
+        "despawn_frame": 705,
+        "location": [
+            634,
+            769
+        ],
+        "box": [
+            531,
+            662,
+            206,
+            214
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 120,
+        "class": "slider_head",
+        "spawn_frame": 684,
+        "despawn_frame": 688,
+        "location": [
+            455,
+            656
+        ],
+        "box": [
+            357,
+            555,
+            196,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 121,
+        "class": "hit_circle",
+        "spawn_frame": 689,
+        "despawn_frame": 704,
+        "location": [
+            1074,
+            688
+        ],
+        "box": [
+            984,
+            600,
+            180,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 123,
+        "class": "slider_head",
+        "spawn_frame": 696,
+        "despawn_frame": 727,
+        "location": [
+            972,
+            934
+        ],
+        "box": [
+            871,
+            825,
+            202,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 125,
+        "class": "slider_head",
+        "spawn_frame": 708,
+        "despawn_frame": 710,
+        "location": [
+            616,
+            893
+        ],
+        "box": [
+            519,
+            799,
+            194,
+            189
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 126,
+        "class": "hit_circle",
+        "spawn_frame": 711,
+        "despawn_frame": 758,
+        "location": [
+            1465,
+            623
+        ],
+        "box": [
+            1366,
+            524,
+            199,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 127,
+        "class": "hit_circle",
+        "spawn_frame": 718,
+        "despawn_frame": 728,
+        "location": [
+            1351,
+            482
+        ],
+        "box": [
+            1257,
+            394,
+            188,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 128,
+        "class": "slider_head",
+        "spawn_frame": 718,
+        "despawn_frame": 742,
+        "location": [
+            1085,
+            692
+        ],
+        "box": [
+            977,
+            589,
+            216,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 131,
+        "class": "slider_head",
+        "spawn_frame": 726,
+        "despawn_frame": 726,
+        "location": [
+            1055,
+            707
+        ],
+        "box": [
+            977,
+            630,
+            156,
+            154
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 130,
+        "class": "slider_head",
+        "spawn_frame": 726,
+        "despawn_frame": 732,
+        "location": [
+            961,
+            835
+        ],
+        "box": [
+            860,
+            731,
+            202,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 132,
+        "class": "hit_circle",
+        "spawn_frame": 733,
+        "despawn_frame": 763,
+        "location": [
+            1295,
+            189
+        ],
+        "box": [
+            1207,
+            102,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 133,
+        "class": "slider_head",
+        "spawn_frame": 746,
+        "despawn_frame": 754,
+        "location": [
+            1312,
+            718
+        ],
+        "box": [
+            1213,
+            619,
+            199,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 134,
+        "class": "slider_head",
+        "spawn_frame": 753,
+        "despawn_frame": 774,
+        "location": [
+            1354,
+            468
+        ],
+        "box": [
+            1244,
+            355,
+            220,
+            226
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 135,
+        "class": "slider_head",
+        "spawn_frame": 755,
+        "despawn_frame": 755,
+        "location": [
+            1889,
+            635
+        ],
+        "box": [
+            1863,
+            512,
+            52,
+            246
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 136,
+        "class": "hit_circle",
+        "spawn_frame": 763,
+        "despawn_frame": 778,
+        "location": [
+            929,
+            334
+        ],
+        "box": [
+            838,
+            245,
+            182,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 137,
+        "class": "slider_head",
+        "spawn_frame": 764,
+        "despawn_frame": 795,
+        "location": [
+            1300,
+            188
+        ],
+        "box": [
+            1192,
+            79,
+            217,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 138,
+        "class": "slider_head",
+        "spawn_frame": 778,
+        "despawn_frame": 778,
+        "location": [
+            1888,
+            636
+        ],
+        "box": [
+            1862,
+            522,
+            53,
+            229
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 140,
+        "class": "hit_circle",
+        "spawn_frame": 793,
+        "despawn_frame": 815,
+        "location": [
+            481,
+            622
+        ],
+        "box": [
+            389,
+            532,
+            184,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 141,
+        "class": "slider_head",
+        "spawn_frame": 794,
+        "despawn_frame": 817,
+        "location": [
+            927,
+            333
+        ],
+        "box": [
+            824,
+            229,
+            206,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 142,
+        "class": "slider_head",
+        "spawn_frame": 796,
+        "despawn_frame": 808,
+        "location": [
+            1065,
+            211
+        ],
+        "box": [
+            968,
+            112,
+            194,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 143,
+        "class": "hit_circle",
+        "spawn_frame": 809,
+        "despawn_frame": 825,
+        "location": [
+            439,
+            914
+        ],
+        "box": [
+            347,
+            826,
+            184,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 144,
+        "class": "slider_head",
+        "spawn_frame": 820,
+        "despawn_frame": 830,
+        "location": [
+            688,
+            317
+        ],
+        "box": [
+            592,
+            220,
+            193,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 145,
+        "class": "slider_head",
+        "spawn_frame": 830,
+        "despawn_frame": 849,
+        "location": [
+            483,
+            631
+        ],
+        "box": [
+            381,
+            531,
+            205,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 146,
+        "class": "hit_circle",
+        "spawn_frame": 831,
+        "despawn_frame": 878,
+        "location": [
+            824,
+            813
+        ],
+        "box": [
+            727,
+            715,
+            194,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 149,
+        "class": "hit_circle",
+        "spawn_frame": 832,
+        "despawn_frame": 833,
+        "location": [
+            689,
+            319
+        ],
+        "box": [
+            588,
+            220,
+            202,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 147,
+        "class": "slider_head",
+        "spawn_frame": 832,
+        "despawn_frame": 862,
+        "location": [
+            451,
+            914
+        ],
+        "box": [
+            344,
+            811,
+            214,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 150,
+        "class": "hit_circle",
+        "spawn_frame": 838,
+        "despawn_frame": 847,
+        "location": [
+            719,
+            667
+        ],
+        "box": [
+            628,
+            580,
+            182,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 151,
+        "class": "hit_circle",
+        "spawn_frame": 853,
+        "despawn_frame": 880,
+        "location": [
+            857,
+            407
+        ],
+        "box": [
+            769,
+            320,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 152,
+        "class": "slider_head",
+        "spawn_frame": 856,
+        "despawn_frame": 856,
+        "location": [
+            1889,
+            712
+        ],
+        "box": [
+            1859,
+            583,
+            60,
+            258
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 154,
+        "class": "slider_head",
+        "spawn_frame": 866,
+        "despawn_frame": 872,
+        "location": [
+            674,
+            930
+        ],
+        "box": [
+            570,
+            830,
+            209,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 155,
+        "class": "slider_head",
+        "spawn_frame": 875,
+        "despawn_frame": 898,
+        "location": [
+            730,
+            548
+        ],
+        "box": [
+            633,
+            449,
+            194,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 156,
+        "class": "slider_head",
+        "spawn_frame": 880,
+        "despawn_frame": 914,
+        "location": [
+            870,
+            410
+        ],
+        "box": [
+            762,
+            304,
+            216,
+            213
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 157,
+        "class": "hit_circle",
+        "spawn_frame": 883,
+        "despawn_frame": 897,
+        "location": [
+            1241,
+            581
+        ],
+        "box": [
+            1147,
+            490,
+            189,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 159,
+        "class": "slider_head",
+        "spawn_frame": 895,
+        "despawn_frame": 895,
+        "location": [
+            724,
+            597
+        ],
+        "box": [
+            623,
+            452,
+            202,
+            290
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 160,
+        "class": "slider_head",
+        "spawn_frame": 908,
+        "despawn_frame": 908,
+        "location": [
+            1890,
+            692
+        ],
+        "box": [
+            1864,
+            574,
+            52,
+            237
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 161,
+        "class": "hit_circle",
+        "spawn_frame": 913,
+        "despawn_frame": 928,
+        "location": [
+            919,
+            953
+        ],
+        "box": [
+            828,
+            863,
+            183,
+            181
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 162,
+        "class": "slider_head",
+        "spawn_frame": 916,
+        "despawn_frame": 928,
+        "location": [
+            1089,
+            468
+        ],
+        "box": [
+            985,
+            366,
+            208,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 163,
+        "class": "slider_head",
+        "spawn_frame": 918,
+        "despawn_frame": 936,
+        "location": [
+            1240,
+            582
+        ],
+        "box": [
+            1138,
+            475,
+            204,
+            214
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 164,
+        "class": "slider_head",
+        "spawn_frame": 928,
+        "despawn_frame": 928,
+        "location": [
+            1889,
+            636
+        ],
+        "box": [
+            1864,
+            519,
+            50,
+            235
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 165,
+        "class": "hit_circle",
+        "spawn_frame": 929,
+        "despawn_frame": 939,
+        "location": [
+            619,
+            976
+        ],
+        "box": [
+            528,
+            886,
+            182,
+            181
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 166,
+        "class": "slider_head",
+        "spawn_frame": 940,
+        "despawn_frame": 949,
+        "location": [
+            1259,
+            810
+        ],
+        "box": [
+            1160,
+            710,
+            198,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 167,
+        "class": "slider_head",
+        "spawn_frame": 946,
+        "despawn_frame": 972,
+        "location": [
+            801,
+            940
+        ],
+        "box": [
+            706,
+            842,
+            191,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 168,
+        "class": "hit_circle",
+        "spawn_frame": 951,
+        "despawn_frame": 999,
+        "location": [
+            462,
+            605
+        ],
+        "box": [
+            360,
+            505,
+            204,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 170,
+        "class": "hit_circle",
+        "spawn_frame": 958,
+        "despawn_frame": 971,
+        "location": [
+            587,
+            469
+        ],
+        "box": [
+            494,
+            377,
+            187,
+            185
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 171,
+        "class": "slider_head",
+        "spawn_frame": 966,
+        "despawn_frame": 981,
+        "location": [
+            618,
+            967
+        ],
+        "box": [
+            513,
+            858,
+            210,
+            219
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 172,
+        "class": "hit_circle",
+        "spawn_frame": 973,
+        "despawn_frame": 1004,
+        "location": [
+            512,
+            181
+        ],
+        "box": [
+            424,
+            95,
+            176,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 175,
+        "class": "slider_head",
+        "spawn_frame": 983,
+        "despawn_frame": 995,
+        "location": [
+            595,
+            742
+        ],
+        "box": [
+            492,
+            637,
+            206,
+            211
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 176,
+        "class": "slider_head",
+        "spawn_frame": 986,
+        "despawn_frame": 1017,
+        "location": [
+            601,
+            358
+        ],
+        "box": [
+            508,
+            259,
+            187,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 178,
+        "class": "hit_circle",
+        "spawn_frame": 996,
+        "despawn_frame": 999,
+        "location": [
+            598,
+            739
+        ],
+        "box": [
+            501,
+            639,
+            194,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 179,
+        "class": "hit_circle",
+        "spawn_frame": 1004,
+        "despawn_frame": 1017,
+        "location": [
+            890,
+            268
+        ],
+        "box": [
+            797,
+            179,
+            186,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 180,
+        "class": "slider_head",
+        "spawn_frame": 1005,
+        "despawn_frame": 1037,
+        "location": [
+            528,
+            182
+        ],
+        "box": [
+            424,
+            80,
+            209,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 182,
+        "class": "slider_head",
+        "spawn_frame": 1006,
+        "despawn_frame": 1007,
+        "location": [
+            1889,
+            714
+        ],
+        "box": [
+            1860,
+            586,
+            59,
+            257
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 183,
+        "class": "slider_head",
+        "spawn_frame": 1029,
+        "despawn_frame": 1029,
+        "location": [
+            1890,
+            711
+        ],
+        "box": [
+            1861,
+            583,
+            59,
+            256
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 184,
+        "class": "hit_circle",
+        "spawn_frame": 1034,
+        "despawn_frame": 1056,
+        "location": [
+            1452,
+            145
+        ],
+        "box": [
+            1363,
+            56,
+            179,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 185,
+        "class": "slider_head",
+        "spawn_frame": 1035,
+        "despawn_frame": 1057,
+        "location": [
+            896,
+            267
+        ],
+        "box": [
+            789,
+            158,
+            215,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 187,
+        "class": "slider_head",
+        "spawn_frame": 1039,
+        "despawn_frame": 1045,
+        "location": [
+            746,
+            150
+        ],
+        "box": [
+            648,
+            50,
+            197,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 189,
+        "class": "slider_head",
+        "spawn_frame": 1049,
+        "despawn_frame": 1049,
+        "location": [
+            1890,
+            636
+        ],
+        "box": [
+            1864,
+            513,
+            53,
+            246
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 188,
+        "class": "hit_circle",
+        "spawn_frame": 1049,
+        "despawn_frame": 1064,
+        "location": [
+            1340,
+            423
+        ],
+        "box": [
+            1248,
+            335,
+            185,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 190,
+        "class": "slider_head",
+        "spawn_frame": 1062,
+        "despawn_frame": 1071,
+        "location": [
+            1123,
+            293
+        ],
+        "box": [
+            1034,
+            198,
+            178,
+            190
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 191,
+        "class": "slider_head",
+        "spawn_frame": 1062,
+        "despawn_frame": 1089,
+        "location": [
+            1446,
+            155
+        ],
+        "box": [
+            1344,
+            51,
+            204,
+            209
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 193,
+        "class": "hit_circle",
+        "spawn_frame": 1072,
+        "despawn_frame": 1119,
+        "location": [
+            1483,
+            793
+        ],
+        "box": [
+            1384,
+            692,
+            198,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 194,
+        "class": "hit_circle",
+        "spawn_frame": 1079,
+        "despawn_frame": 1090,
+        "location": [
+            1334,
+            897
+        ],
+        "box": [
+            1245,
+            807,
+            179,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 195,
+        "class": "slider_head",
+        "spawn_frame": 1087,
+        "despawn_frame": 1103,
+        "location": [
+            1340,
+            435
+        ],
+        "box": [
+            1238,
+            330,
+            205,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 196,
+        "class": "slider_head",
+        "spawn_frame": 1092,
+        "despawn_frame": 1093,
+        "location": [
+            1434,
+            262
+        ],
+        "box": [
+            1334,
+            165,
+            200,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 197,
+        "class": "hit_circle",
+        "spawn_frame": 1095,
+        "despawn_frame": 1152,
+        "location": [
+            1054,
+            805
+        ],
+        "box": [
+            936,
+            687,
+            236,
+            237
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 198,
+        "class": "slider_head",
+        "spawn_frame": 1104,
+        "despawn_frame": 1116,
+        "location": [
+            1362,
+            661
+        ],
+        "box": [
+            1265,
+            564,
+            194,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 200,
+        "class": "slider_head",
+        "spawn_frame": 1112,
+        "despawn_frame": 1135,
+        "location": [
+            1325,
+            895
+        ],
+        "box": [
+            1221,
+            790,
+            209,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 201,
+        "class": "hit_circle",
+        "spawn_frame": 1117,
+        "despawn_frame": 1140,
+        "location": [
+            719,
+            939
+        ],
+        "box": [
+            630,
+            850,
+            179,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 202,
+        "class": "slider_head",
+        "spawn_frame": 1138,
+        "despawn_frame": 1138,
+        "location": [
+            1221,
+            888
+        ],
+        "box": [
+            1125,
+            788,
+            192,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 203,
+        "class": "slider_head",
+        "spawn_frame": 1141,
+        "despawn_frame": 1185,
+        "location": [
+            727,
+            912
+        ],
+        "box": [
+            623,
+            799,
+            208,
+            226
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 205,
+        "class": "hit_circle",
+        "spawn_frame": 1162,
+        "despawn_frame": 1189,
+        "location": [
+            851,
+            408
+        ],
+        "box": [
+            764,
+            321,
+            174,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 206,
+        "class": "slider_head",
+        "spawn_frame": 1171,
+        "despawn_frame": 1192,
+        "location": [
+            672,
+            789
+        ],
+        "box": [
+            571,
+            681,
+            202,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 207,
+        "class": "slider_head",
+        "spawn_frame": 1181,
+        "despawn_frame": 1186,
+        "location": [
+            689,
+            843
+        ],
+        "box": [
+            594,
+            737,
+            191,
+            213
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 208,
+        "class": "hit_circle",
+        "spawn_frame": 1184,
+        "despawn_frame": 1214,
+        "location": [
+            1194,
+            368
+        ],
+        "box": [
+            1104,
+            278,
+            181,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 209,
+        "class": "slider_head",
+        "spawn_frame": 1186,
+        "despawn_frame": 1223,
+        "location": [
+            861,
+            409
+        ],
+        "box": [
+            757,
+            307,
+            208,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 210,
+        "class": "slider_head",
+        "spawn_frame": 1194,
+        "despawn_frame": 1206,
+        "location": [
+            697,
+            543
+        ],
+        "box": [
+            600,
+            446,
+            194,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 211,
+        "class": "hit_circle",
+        "spawn_frame": 1200,
+        "despawn_frame": 1216,
+        "location": [
+            983,
+            136
+        ],
+        "box": [
+            896,
+            51,
+            174,
+            171
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 213,
+        "class": "hit_circle",
+        "spawn_frame": 1209,
+        "despawn_frame": 1209,
+        "location": [
+            696,
+            543
+        ],
+        "box": [
+            593,
+            442,
+            206,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 214,
+        "class": "hit_circle",
+        "spawn_frame": 1214,
+        "despawn_frame": 1261,
+        "location": [
+            678,
+            256
+        ],
+        "box": [
+            579,
+            159,
+            198,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 215,
+        "class": "slider_head",
+        "spawn_frame": 1216,
+        "despawn_frame": 1238,
+        "location": [
+            1189,
+            359
+        ],
+        "box": [
+            1084,
+            250,
+            210,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 216,
+        "class": "hit_circle",
+        "spawn_frame": 1222,
+        "despawn_frame": 1227,
+        "location": [
+            483,
+            218
+        ],
+        "box": [
+            393,
+            128,
+            180,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 217,
+        "class": "slider_head",
+        "spawn_frame": 1223,
+        "despawn_frame": 1254,
+        "location": [
+            973,
+            145
+        ],
+        "box": [
+            871,
+            45,
+            205,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 218,
+        "class": "slider_head",
+        "spawn_frame": 1224,
+        "despawn_frame": 1227,
+        "location": [
+            987,
+            401
+        ],
+        "box": [
+            890,
+            300,
+            195,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 220,
+        "class": "slider_head",
+        "spawn_frame": 1238,
+        "despawn_frame": 1243,
+        "location": [
+            1158,
+            246
+        ],
+        "box": [
+            1060,
+            144,
+            197,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 222,
+        "class": "hit_circle",
+        "spawn_frame": 1244,
+        "despawn_frame": 1247,
+        "location": [
+            1161,
+            244
+        ],
+        "box": [
+            1059,
+            145,
+            204,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 221,
+        "class": "hit_circle",
+        "spawn_frame": 1244,
+        "despawn_frame": 1276,
+        "location": [
+            450,
+            673
+        ],
+        "box": [
+            362,
+            587,
+            176,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 223,
+        "class": "slider_head",
+        "spawn_frame": 1249,
+        "despawn_frame": 1258,
+        "location": [
+            856,
+            153
+        ],
+        "box": [
+            755,
+            52,
+            203,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 224,
+        "class": "slider_head",
+        "spawn_frame": 1252,
+        "despawn_frame": 1274,
+        "location": [
+            474,
+            231
+        ],
+        "box": [
+            374,
+            129,
+            200,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 225,
+        "class": "hit_circle",
+        "spawn_frame": 1260,
+        "despawn_frame": 1262,
+        "location": [
+            857,
+            153
+        ],
+        "box": [
+            755,
+            54,
+            205,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 226,
+        "class": "hit_circle",
+        "spawn_frame": 1274,
+        "despawn_frame": 1282,
+        "location": [
+            953,
+            848
+        ],
+        "box": [
+            859,
+            756,
+            188,
+            184
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 227,
+        "class": "slider_head",
+        "spawn_frame": 1275,
+        "despawn_frame": 1306,
+        "location": [
+            516,
+            673
+        ],
+        "box": [
+            358,
+            574,
+            316,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 228,
+        "class": "slider_head",
+        "spawn_frame": 1276,
+        "despawn_frame": 1288,
+        "location": [
+            520,
+            477
+        ],
+        "box": [
+            421,
+            378,
+            199,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 230,
+        "class": "hit_circle",
+        "spawn_frame": 1289,
+        "despawn_frame": 1309,
+        "location": [
+            1289,
+            892
+        ],
+        "box": [
+            1198,
+            804,
+            183,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 232,
+        "class": "hit_circle",
+        "spawn_frame": 1298,
+        "despawn_frame": 1302,
+        "location": [
+            954,
+            847
+        ],
+        "box": [
+            861,
+            759,
+            187,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 233,
+        "class": "slider_head",
+        "spawn_frame": 1299,
+        "despawn_frame": 1299,
+        "location": [
+            1890,
+            692
+        ],
+        "box": [
+            1864,
+            573,
+            52,
+            239
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 234,
+        "class": "slider_head",
+        "spawn_frame": 1306,
+        "despawn_frame": 1307,
+        "location": [
+            464,
+            677
+        ],
+        "box": [
+            353,
+            574,
+            222,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 235,
+        "class": "slider_head",
+        "spawn_frame": 1306,
+        "despawn_frame": 1310,
+        "location": [
+            591,
+            665
+        ],
+        "box": [
+            500,
+            566,
+            183,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 238,
+        "class": "slider_head",
+        "spawn_frame": 1312,
+        "despawn_frame": 1330,
+        "location": [
+            1017,
+            857
+        ],
+        "box": [
+            860,
+            753,
+            315,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 237,
+        "class": "hit_circle",
+        "spawn_frame": 1312,
+        "despawn_frame": 1359,
+        "location": [
+            1425,
+            500
+        ],
+        "box": [
+            1327,
+            402,
+            197,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 239,
+        "class": "hit_circle",
+        "spawn_frame": 1319,
+        "despawn_frame": 1347,
+        "location": [
+            1287,
+            355
+        ],
+        "box": [
+            1200,
+            268,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 240,
+        "class": "slider_head",
+        "spawn_frame": 1326,
+        "despawn_frame": 1342,
+        "location": [
+            1287,
+            884
+        ],
+        "box": [
+            1182,
+            775,
+            211,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 241,
+        "class": "slider_head",
+        "spawn_frame": 1329,
+        "despawn_frame": 1330,
+        "location": [
+            955,
+            848
+        ],
+        "box": [
+            849,
+            738,
+            213,
+            221
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 242,
+        "class": "slider_head",
+        "spawn_frame": 1329,
+        "despawn_frame": 1332,
+        "location": [
+            1086,
+            864
+        ],
+        "box": [
+            991,
+            762,
+            190,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 243,
+        "class": "hit_circle",
+        "spawn_frame": 1334,
+        "despawn_frame": 1334,
+        "location": [
+            1083,
+            865
+        ],
+        "box": [
+            984,
+            764,
+            198,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 244,
+        "class": "hit_circle",
+        "spawn_frame": 1342,
+        "despawn_frame": 1371,
+        "location": [
+            997,
+            495
+        ],
+        "box": [
+            910,
+            408,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 245,
+        "class": "slider_head",
+        "spawn_frame": 1343,
+        "despawn_frame": 1356,
+        "location": [
+            1266,
+            633
+        ],
+        "box": [
+            1167,
+            533,
+            198,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 246,
+        "class": "slider_head",
+        "spawn_frame": 1346,
+        "despawn_frame": 1382,
+        "location": [
+            1248,
+            368
+        ],
+        "box": [
+            1111,
+            268,
+            275,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 247,
+        "class": "hit_circle",
+        "spawn_frame": 1359,
+        "despawn_frame": 1359,
+        "location": [
+            1270,
+            630
+        ],
+        "box": [
+            1172,
+            529,
+            196,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 248,
+        "class": "hit_circle",
+        "spawn_frame": 1364,
+        "despawn_frame": 1393,
+        "location": [
+            818,
+            749
+        ],
+        "box": [
+            730,
+            661,
+            176,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 249,
+        "class": "slider_head",
+        "spawn_frame": 1372,
+        "despawn_frame": 1405,
+        "location": [
+            997,
+            510
+        ],
+        "box": [
+            895,
+            402,
+            205,
+            217
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 250,
+        "class": "slider_head",
+        "spawn_frame": 1381,
+        "despawn_frame": 1386,
+        "location": [
+            1160,
+            373
+        ],
+        "box": [
+            1062,
+            274,
+            197,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 251,
+        "class": "hit_circle",
+        "spawn_frame": 1387,
+        "despawn_frame": 1387,
+        "location": [
+            1159,
+            373
+        ],
+        "box": [
+            1059,
+            273,
+            200,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 252,
+        "class": "hit_circle",
+        "spawn_frame": 1394,
+        "despawn_frame": 1412,
+        "location": [
+            412,
+            435
+        ],
+        "box": [
+            322,
+            345,
+            181,
+            181
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 253,
+        "class": "slider_head",
+        "spawn_frame": 1394,
+        "despawn_frame": 1428,
+        "location": [
+            770,
+            750
+        ],
+        "box": [
+            643,
+            651,
+            254,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 254,
+        "class": "hit_circle",
+        "spawn_frame": 1409,
+        "despawn_frame": 1409,
+        "location": [
+            987,
+            633
+        ],
+        "box": [
+            889,
+            535,
+            196,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 255,
+        "class": "hit_circle",
+        "spawn_frame": 1410,
+        "despawn_frame": 1423,
+        "location": [
+            566,
+            167
+        ],
+        "box": [
+            474,
+            80,
+            185,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 256,
+        "class": "slider_head",
+        "spawn_frame": 1419,
+        "despawn_frame": 1419,
+        "location": [
+            1889,
+            712
+        ],
+        "box": [
+            1859,
+            581,
+            60,
+            263
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 257,
+        "class": "slider_head",
+        "spawn_frame": 1427,
+        "despawn_frame": 1447,
+        "location": [
+            410,
+            429
+        ],
+        "box": [
+            305,
+            321,
+            211,
+            217
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 258,
+        "class": "slider_head",
+        "spawn_frame": 1428,
+        "despawn_frame": 1428,
+        "location": [
+            818,
+            756
+        ],
+        "box": [
+            714,
+            654,
+            208,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 259,
+        "class": "slider_head",
+        "spawn_frame": 1428,
+        "despawn_frame": 1431,
+        "location": [
+            692,
+            740
+        ],
+        "box": [
+            594,
+            643,
+            197,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 261,
+        "class": "hit_circle",
+        "spawn_frame": 1432,
+        "despawn_frame": 1461,
+        "location": [
+            988,
+            334
+        ],
+        "box": [
+            901,
+            247,
+            174,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 263,
+        "class": "hit_circle",
+        "spawn_frame": 1434,
+        "despawn_frame": 1434,
+        "location": [
+            692,
+            740
+        ],
+        "box": [
+            594,
+            641,
+            197,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 266,
+        "class": "slider_head",
+        "spawn_frame": 1446,
+        "despawn_frame": 1454,
+        "location": [
+            415,
+            306
+        ],
+        "box": [
+            317,
+            209,
+            196,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 265,
+        "class": "slider_head",
+        "spawn_frame": 1446,
+        "despawn_frame": 1463,
+        "location": [
+            572,
+            164
+        ],
+        "box": [
+            462,
+            56,
+            220,
+            217
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 267,
+        "class": "hit_circle",
+        "spawn_frame": 1454,
+        "despawn_frame": 1501,
+        "location": [
+            1288,
+            195
+        ],
+        "box": [
+            1189,
+            97,
+            198,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 268,
+        "class": "hit_circle",
+        "spawn_frame": 1455,
+        "despawn_frame": 1457,
+        "location": [
+            414,
+            306
+        ],
+        "box": [
+            312,
+            207,
+            204,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 269,
+        "class": "hit_circle",
+        "spawn_frame": 1462,
+        "despawn_frame": 1487,
+        "location": [
+            1444,
+            330
+        ],
+        "box": [
+            1355,
+            241,
+            178,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 270,
+        "class": "slider_head",
+        "spawn_frame": 1462,
+        "despawn_frame": 1495,
+        "location": [
+            1000,
+            339
+        ],
+        "box": [
+            894,
+            238,
+            212,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 271,
+        "class": "slider_head",
+        "spawn_frame": 1464,
+        "despawn_frame": 1474,
+        "location": [
+            829,
+            198
+        ],
+        "box": [
+            730,
+            98,
+            198,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 273,
+        "class": "hit_circle",
+        "spawn_frame": 1484,
+        "despawn_frame": 1514,
+        "location": [
+            1366,
+            736
+        ],
+        "box": [
+            1278,
+            648,
+            176,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 276,
+        "class": "slider_head",
+        "spawn_frame": 1491,
+        "despawn_frame": 1514,
+        "location": [
+            1443,
+            332
+        ],
+        "box": [
+            1341,
+            225,
+            204,
+            215
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 277,
+        "class": "slider_head",
+        "spawn_frame": 1494,
+        "despawn_frame": 1495,
+        "location": [
+            1069,
+            331
+        ],
+        "box": [
+            926,
+            232,
+            286,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 279,
+        "class": "slider_head",
+        "spawn_frame": 1495,
+        "despawn_frame": 1497,
+        "location": [
+            1137,
+            323
+        ],
+        "box": [
+            1048,
+            225,
+            179,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 278,
+        "class": "slider_head",
+        "spawn_frame": 1495,
+        "despawn_frame": 1499,
+        "location": [
+            1130,
+            323
+        ],
+        "box": [
+            1033,
+            222,
+            194,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 280,
+        "class": "slider_head",
+        "spawn_frame": 1504,
+        "despawn_frame": 1504,
+        "location": [
+            1885,
+            530
+        ],
+        "box": [
+            1851,
+            457,
+            68,
+            146
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 281,
+        "class": "hit_circle",
+        "spawn_frame": 1514,
+        "despawn_frame": 1534,
+        "location": [
+            874,
+            914
+        ],
+        "box": [
+            783,
+            824,
+            183,
+            181
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 282,
+        "class": "slider_head",
+        "spawn_frame": 1515,
+        "despawn_frame": 1548,
+        "location": [
+            1373,
+            738
+        ],
+        "box": [
+            1265,
+            633,
+            217,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 283,
+        "class": "slider_head",
+        "spawn_frame": 1516,
+        "despawn_frame": 1527,
+        "location": [
+            1506,
+            579
+        ],
+        "box": [
+            1407,
+            477,
+            198,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 285,
+        "class": "hit_circle",
+        "spawn_frame": 1529,
+        "despawn_frame": 1543,
+        "location": [
+            576,
+            776
+        ],
+        "box": [
+            482,
+            684,
+            189,
+            184
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 287,
+        "class": "slider_head",
+        "spawn_frame": 1548,
+        "despawn_frame": 1550,
+        "location": [
+            1244,
+            730
+        ],
+        "box": [
+            1144,
+            630,
+            200,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 288,
+        "class": "hit_circle",
+        "spawn_frame": 1551,
+        "despawn_frame": 1554,
+        "location": [
+            1241,
+            730
+        ],
+        "box": [
+            1139,
+            631,
+            204,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 289,
+        "class": "slider_head",
+        "spawn_frame": 1551,
+        "despawn_frame": 1570,
+        "location": [
+            780,
+            905
+        ],
+        "box": [
+            653,
+            809,
+            254,
+            193
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 290,
+        "class": "hit_circle",
+        "spawn_frame": 1552,
+        "despawn_frame": 1599,
+        "location": [
+            706,
+            383
+        ],
+        "box": [
+            606,
+            285,
+            200,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 292,
+        "class": "hit_circle",
+        "spawn_frame": 1558,
+        "despawn_frame": 1558,
+        "location": [
+            874,
+            911
+        ],
+        "box": [
+            783,
+            820,
+            182,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 293,
+        "class": "hit_circle",
+        "spawn_frame": 1559,
+        "despawn_frame": 1588,
+        "location": [
+            859,
+            524
+        ],
+        "box": [
+            773,
+            437,
+            173,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 295,
+        "class": "slider_head",
+        "spawn_frame": 1567,
+        "despawn_frame": 1582,
+        "location": [
+            572,
+            772
+        ],
+        "box": [
+            466,
+            661,
+            213,
+            222
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 297,
+        "class": "slider_head",
+        "spawn_frame": 1570,
+        "despawn_frame": 1570,
+        "location": [
+            869,
+            914
+        ],
+        "box": [
+            770,
+            813,
+            198,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 296,
+        "class": "slider_head",
+        "spawn_frame": 1570,
+        "despawn_frame": 1573,
+        "location": [
+            743,
+            903
+        ],
+        "box": [
+            645,
+            804,
+            197,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 298,
+        "class": "hit_circle",
+        "spawn_frame": 1574,
+        "despawn_frame": 1575,
+        "location": [
+            741,
+            901
+        ],
+        "box": [
+            641,
+            802,
+            200,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 299,
+        "class": "hit_circle",
+        "spawn_frame": 1582,
+        "despawn_frame": 1610,
+        "location": [
+            1172,
+            449
+        ],
+        "box": [
+            1084,
+            362,
+            177,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 300,
+        "class": "slider_head",
+        "spawn_frame": 1586,
+        "despawn_frame": 1595,
+        "location": [
+            554,
+            521
+        ],
+        "box": [
+            456,
+            423,
+            196,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 301,
+        "class": "slider_head",
+        "spawn_frame": 1589,
+        "despawn_frame": 1621,
+        "location": [
+            938,
+            549
+        ],
+        "box": [
+            788,
+            441,
+            301,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 302,
+        "class": "hit_circle",
+        "spawn_frame": 1597,
+        "despawn_frame": 1600,
+        "location": [
+            556,
+            517
+        ],
+        "box": [
+            462,
+            423,
+            188,
+            188
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 303,
+        "class": "hit_circle",
+        "spawn_frame": 1604,
+        "despawn_frame": 1634,
+        "location": [
+            1361,
+            716
+        ],
+        "box": [
+            1273,
+            629,
+            177,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 304,
+        "class": "slider_head",
+        "spawn_frame": 1611,
+        "despawn_frame": 1644,
+        "location": [
+            1180,
+            460
+        ],
+        "box": [
+            1076,
+            352,
+            209,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 305,
+        "class": "slider_head",
+        "spawn_frame": 1616,
+        "despawn_frame": 1626,
+        "location": [
+            986,
+            553
+        ],
+        "box": [
+            885,
+            450,
+            202,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 307,
+        "class": "hit_circle",
+        "spawn_frame": 1634,
+        "despawn_frame": 1649,
+        "location": [
+            989,
+            947
+        ],
+        "box": [
+            897,
+            857,
+            184,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 308,
+        "class": "slider_head",
+        "spawn_frame": 1635,
+        "despawn_frame": 1667,
+        "location": [
+            1360,
+            728
+        ],
+        "box": [
+            1261,
+            628,
+            199,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 309,
+        "class": "slider_head",
+        "spawn_frame": 1647,
+        "despawn_frame": 1648,
+        "location": [
+            1200,
+            583
+        ],
+        "box": [
+            1100,
+            484,
+            200,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 310,
+        "class": "hit_circle",
+        "spawn_frame": 1656,
+        "despawn_frame": 1663,
+        "location": [
+            1078,
+            679
+        ],
+        "box": [
+            986,
+            588,
+            185,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 312,
+        "class": "slider_head",
+        "spawn_frame": 1668,
+        "despawn_frame": 1671,
+        "location": [
+            1342,
+            846
+        ],
+        "box": [
+            1242,
+            744,
+            200,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 313,
+        "class": "slider_head",
+        "spawn_frame": 1670,
+        "despawn_frame": 1687,
+        "location": [
+            982,
+            936
+        ],
+        "box": [
+            882,
+            831,
+            200,
+            211
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 315,
+        "class": "hit_circle",
+        "spawn_frame": 1672,
+        "despawn_frame": 1672,
+        "location": [
+            1342,
+            847
+        ],
+        "box": [
+            1241,
+            745,
+            203,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 314,
+        "class": "hit_circle",
+        "spawn_frame": 1672,
+        "despawn_frame": 1719,
+        "location": [
+            1174,
+            271
+        ],
+        "box": [
+            1072,
+            170,
+            204,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 317,
+        "class": "hit_circle",
+        "spawn_frame": 1679,
+        "despawn_frame": 1690,
+        "location": [
+            1023,
+            164
+        ],
+        "box": [
+            934,
+            76,
+            179,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 318,
+        "class": "slider_head",
+        "spawn_frame": 1684,
+        "despawn_frame": 1703,
+        "location": [
+            1079,
+            676
+        ],
+        "box": [
+            972,
+            563,
+            215,
+            227
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 319,
+        "class": "slider_head",
+        "spawn_frame": 1688,
+        "despawn_frame": 1695,
+        "location": [
+            971,
+            833
+        ],
+        "box": [
+            871,
+            732,
+            200,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 320,
+        "class": "hit_circle",
+        "spawn_frame": 1694,
+        "despawn_frame": 1724,
+        "location": [
+            799,
+            310
+        ],
+        "box": [
+            711,
+            223,
+            177,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 321,
+        "class": "hit_circle",
+        "spawn_frame": 1697,
+        "despawn_frame": 1697,
+        "location": [
+            972,
+            832
+        ],
+        "box": [
+            868,
+            731,
+            208,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 323,
+        "class": "slider_head",
+        "spawn_frame": 1703,
+        "despawn_frame": 1716,
+        "location": [
+            1103,
+            444
+        ],
+        "box": [
+            1002,
+            341,
+            203,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 325,
+        "class": "slider_head",
+        "spawn_frame": 1719,
+        "despawn_frame": 1738,
+        "location": [
+            909,
+            160
+        ],
+        "box": [
+            809,
+            62,
+            201,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 326,
+        "class": "hit_circle",
+        "spawn_frame": 1723,
+        "despawn_frame": 1723,
+        "location": [
+            1022,
+            163
+        ],
+        "box": [
+            932,
+            74,
+            180,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 327,
+        "class": "hit_circle",
+        "spawn_frame": 1724,
+        "despawn_frame": 1734,
+        "location": [
+            470,
+            487
+        ],
+        "box": [
+            378,
+            399,
+            184,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 328,
+        "class": "slider_head",
+        "spawn_frame": 1724,
+        "despawn_frame": 1756,
+        "location": [
+            802,
+            317
+        ],
+        "box": [
+            694,
+            207,
+            216,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 330,
+        "class": "slider_head",
+        "spawn_frame": 1749,
+        "despawn_frame": 1749,
+        "location": [
+            1889,
+            712
+        ],
+        "box": [
+            1859,
+            582,
+            60,
+            261
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 331,
+        "class": "hit_circle",
+        "spawn_frame": 1754,
+        "despawn_frame": 1759,
+        "location": [
+            756,
+            967
+        ],
+        "box": [
+            663,
+            876,
+            187,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 332,
+        "class": "slider_head",
+        "spawn_frame": 1756,
+        "despawn_frame": 1768,
+        "location": [
+            562,
+            330
+        ],
+        "box": [
+            464,
+            232,
+            196,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 333,
+        "class": "slider_head",
+        "spawn_frame": 1764,
+        "despawn_frame": 1777,
+        "location": [
+            471,
+            492
+        ],
+        "box": [
+            370,
+            389,
+            202,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 334,
+        "class": "hit_circle",
+        "spawn_frame": 1769,
+        "despawn_frame": 1783,
+        "location": [
+            999,
+            814
+        ],
+        "box": [
+            907,
+            727,
+            185,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 335,
+        "class": "slider_head",
+        "spawn_frame": 1779,
+        "despawn_frame": 1792,
+        "location": [
+            504,
+            700
+        ],
+        "box": [
+            408,
+            602,
+            193,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 337,
+        "class": "hit_circle",
+        "spawn_frame": 1792,
+        "despawn_frame": 1839,
+        "location": [
+            1392,
+            722
+        ],
+        "box": [
+            1296,
+            621,
+            192,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 338,
+        "class": "hit_circle",
+        "spawn_frame": 1793,
+        "despawn_frame": 1794,
+        "location": [
+            503,
+            699
+        ],
+        "box": [
+            405,
+            597,
+            197,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 341,
+        "class": "slider_head",
+        "spawn_frame": 1795,
+        "despawn_frame": 1808,
+        "location": [
+            759,
+            964
+        ],
+        "box": [
+            652,
+            858,
+            214,
+            212
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 342,
+        "class": "hit_circle",
+        "spawn_frame": 1799,
+        "despawn_frame": 1808,
+        "location": [
+            1264,
+            584
+        ],
+        "box": [
+            1175,
+            496,
+            178,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 343,
+        "class": "slider_head",
+        "spawn_frame": 1807,
+        "despawn_frame": 1823,
+        "location": [
+            1006,
+            812
+        ],
+        "box": [
+            898,
+            702,
+            217,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 344,
+        "class": "slider_head",
+        "spawn_frame": 1808,
+        "despawn_frame": 1811,
+        "location": [
+            871,
+            955
+        ],
+        "box": [
+            773,
+            850,
+            197,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 345,
+        "class": "hit_circle",
+        "spawn_frame": 1815,
+        "despawn_frame": 1845,
+        "location": [
+            1299,
+            286
+        ],
+        "box": [
+            1212,
+            199,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 347,
+        "class": "slider_head",
+        "spawn_frame": 1825,
+        "despawn_frame": 1854,
+        "location": [
+            1264,
+            576
+        ],
+        "box": [
+            1154,
+            467,
+            220,
+            219
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 348,
+        "class": "slider_head",
+        "spawn_frame": 1827,
+        "despawn_frame": 1836,
+        "location": [
+            1236,
+            832
+        ],
+        "box": [
+            1134,
+            732,
+            205,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 349,
+        "class": "slider_head",
+        "spawn_frame": 1836,
+        "despawn_frame": 1837,
+        "location": [
+            1890,
+            637
+        ],
+        "box": [
+            1863,
+            523,
+            55,
+            229
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 350,
+        "class": "hit_circle",
+        "spawn_frame": 1844,
+        "despawn_frame": 1857,
+        "location": [
+            941,
+            361
+        ],
+        "box": [
+            849,
+            272,
+            184,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 352,
+        "class": "slider_head",
+        "spawn_frame": 1846,
+        "despawn_frame": 1875,
+        "location": [
+            1296,
+            289
+        ],
+        "box": [
+            1186,
+            181,
+            221,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 353,
+        "class": "slider_head",
+        "spawn_frame": 1859,
+        "despawn_frame": 1869,
+        "location": [
+            1889,
+            709
+        ],
+        "box": [
+            1860,
+            583,
+            59,
+            252
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 354,
+        "class": "hit_circle",
+        "spawn_frame": 1863,
+        "despawn_frame": 1863,
+        "location": [
+            1300,
+            291
+        ],
+        "box": [
+            1201,
+            196,
+            198,
+            190
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 356,
+        "class": "hit_circle",
+        "spawn_frame": 1874,
+        "despawn_frame": 1890,
+        "location": [
+            408,
+            133
+        ],
+        "box": [
+            318,
+            44,
+            181,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 357,
+        "class": "slider_head",
+        "spawn_frame": 1877,
+        "despawn_frame": 1888,
+        "location": [
+            1072,
+            236
+        ],
+        "box": [
+            976,
+            137,
+            192,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 358,
+        "class": "slider_head",
+        "spawn_frame": 1884,
+        "despawn_frame": 1898,
+        "location": [
+            942,
+            360
+        ],
+        "box": [
+            834,
+            253,
+            217,
+            214
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 359,
+        "class": "slider_head",
+        "spawn_frame": 1889,
+        "despawn_frame": 1890,
+        "location": [
+            1890,
+            636
+        ],
+        "box": [
+            1864,
+            523,
+            52,
+            227
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 360,
+        "class": "hit_circle",
+        "spawn_frame": 1890,
+        "despawn_frame": 1918,
+        "location": [
+            463,
+            424
+        ],
+        "box": [
+            373,
+            337,
+            180,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 361,
+        "class": "slider_head",
+        "spawn_frame": 1900,
+        "despawn_frame": 1929,
+        "location": [
+            406,
+            145
+        ],
+        "box": [
+            303,
+            40,
+            206,
+            211
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 362,
+        "class": "slider_head",
+        "spawn_frame": 1901,
+        "despawn_frame": 1911,
+        "location": [
+            711,
+            353
+        ],
+        "box": [
+            619,
+            256,
+            184,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 363,
+        "class": "slider_head",
+        "spawn_frame": 1911,
+        "despawn_frame": 1943,
+        "location": [
+            463,
+            432
+        ],
+        "box": [
+            360,
+            324,
+            206,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 364,
+        "class": "hit_circle",
+        "spawn_frame": 1912,
+        "despawn_frame": 1958,
+        "location": [
+            416,
+            833
+        ],
+        "box": [
+            321,
+            739,
+            191,
+            189
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 366,
+        "class": "slider_head",
+        "spawn_frame": 1919,
+        "despawn_frame": 1919,
+        "location": [
+            1890,
+            634
+        ],
+        "box": [
+            1862,
+            505,
+            56,
+            259
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 365,
+        "class": "hit_circle",
+        "spawn_frame": 1919,
+        "despawn_frame": 1930,
+        "location": [
+            572,
+            934
+        ],
+        "box": [
+            477,
+            844,
+            190,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 367,
+        "class": "hit_circle",
+        "spawn_frame": 1934,
+        "despawn_frame": 1964,
+        "location": [
+            820,
+            794
+        ],
+        "box": [
+            733,
+            707,
+            175,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 369,
+        "class": "slider_head",
+        "spawn_frame": 1944,
+        "despawn_frame": 1955,
+        "location": [
+            486,
+            662
+        ],
+        "box": [
+            389,
+            564,
+            195,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 370,
+        "class": "slider_head",
+        "spawn_frame": 1956,
+        "despawn_frame": 1977,
+        "location": [
+            684,
+            924
+        ],
+        "box": [
+            588,
+            824,
+            193,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 371,
+        "class": "hit_circle",
+        "spawn_frame": 1964,
+        "despawn_frame": 1980,
+        "location": [
+            703,
+            464
+        ],
+        "box": [
+            613,
+            377,
+            181,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 373,
+        "class": "slider_head",
+        "spawn_frame": 1965,
+        "despawn_frame": 1994,
+        "location": [
+            824,
+            792
+        ],
+        "box": [
+            721,
+            684,
+            207,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 374,
+        "class": "slider_head",
+        "spawn_frame": 1972,
+        "despawn_frame": 1972,
+        "location": [
+            578,
+            935
+        ],
+        "box": [
+            471,
+            830,
+            214,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 375,
+        "class": "slider_head",
+        "spawn_frame": 1979,
+        "despawn_frame": 1990,
+        "location": [
+            1889,
+            707
+        ],
+        "box": [
+            1859,
+            574,
+            61,
+            267
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 376,
+        "class": "hit_circle",
+        "spawn_frame": 1994,
+        "despawn_frame": 2010,
+        "location": [
+            1041,
+            145
+        ],
+        "box": [
+            947,
+            55,
+            189,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 377,
+        "class": "slider_head",
+        "spawn_frame": 1996,
+        "despawn_frame": 2008,
+        "location": [
+            858,
+            573
+        ],
+        "box": [
+            758,
+            473,
+            200,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 378,
+        "class": "slider_head",
+        "spawn_frame": 1999,
+        "despawn_frame": 2018,
+        "location": [
+            703,
+            459
+        ],
+        "box": [
+            598,
+            348,
+            211,
+            222
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 379,
+        "class": "hit_circle",
+        "spawn_frame": 2009,
+        "despawn_frame": 2029,
+        "location": [
+            1299,
+            278
+        ],
+        "box": [
+            1210,
+            191,
+            178,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 380,
+        "class": "hit_circle",
+        "spawn_frame": 2011,
+        "despawn_frame": 2012,
+        "location": [
+            860,
+            571
+        ],
+        "box": [
+            761,
+            469,
+            199,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 381,
+        "class": "slider_head",
+        "spawn_frame": 2019,
+        "despawn_frame": 2031,
+        "location": [
+            684,
+            229
+        ],
+        "box": [
+            585,
+            129,
+            198,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 382,
+        "class": "slider_head",
+        "spawn_frame": 2026,
+        "despawn_frame": 2026,
+        "location": [
+            1890,
+            638
+        ],
+        "box": [
+            1863,
+            538,
+            54,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 383,
+        "class": "hit_circle",
+        "spawn_frame": 2032,
+        "despawn_frame": 2079,
+        "location": [
+            1444,
+            647
+        ],
+        "box": [
+            1343,
+            545,
+            202,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 384,
+        "class": "hit_circle",
+        "spawn_frame": 2033,
+        "despawn_frame": 2034,
+        "location": [
+            685,
+            229
+        ],
+        "box": [
+            584,
+            127,
+            203,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 385,
+        "class": "slider_head",
+        "spawn_frame": 2034,
+        "despawn_frame": 2063,
+        "location": [
+            1300,
+            290
+        ],
+        "box": [
+            1198,
+            186,
+            204,
+            209
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 386,
+        "class": "slider_head",
+        "spawn_frame": 2035,
+        "despawn_frame": 2050,
+        "location": [
+            1168,
+            158
+        ],
+        "box": [
+            1080,
+            60,
+            177,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 387,
+        "class": "slider_head",
+        "spawn_frame": 2039,
+        "despawn_frame": 2039,
+        "location": [
+            1889,
+            637
+        ],
+        "box": [
+            1862,
+            515,
+            54,
+            244
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 388,
+        "class": "hit_circle",
+        "spawn_frame": 2039,
+        "despawn_frame": 2049,
+        "location": [
+            1352,
+            804
+        ],
+        "box": [
+            1261,
+            716,
+            183,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 389,
+        "class": "slider_head",
+        "spawn_frame": 2054,
+        "despawn_frame": 2055,
+        "location": [
+            1885,
+            533
+        ],
+        "box": [
+            1851,
+            457,
+            68,
+            152
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 390,
+        "class": "hit_circle",
+        "spawn_frame": 2055,
+        "despawn_frame": 2112,
+        "location": [
+            1074,
+            736
+        ],
+        "box": [
+            955,
+            618,
+            238,
+            236
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 391,
+        "class": "slider_head",
+        "spawn_frame": 2064,
+        "despawn_frame": 2077,
+        "location": [
+            1323,
+            517
+        ],
+        "box": [
+            1225,
+            419,
+            197,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 392,
+        "class": "slider_head",
+        "spawn_frame": 2068,
+        "despawn_frame": 2094,
+        "location": [
+            1342,
+            805
+        ],
+        "box": [
+            1231,
+            700,
+            222,
+            211
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 393,
+        "class": "hit_circle",
+        "spawn_frame": 2077,
+        "despawn_frame": 2099,
+        "location": [
+            748,
+            899
+        ],
+        "box": [
+            659,
+            812,
+            179,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 395,
+        "class": "hit_circle",
+        "spawn_frame": 2100,
+        "despawn_frame": 2100,
+        "location": [
+            1236,
+            813
+        ],
+        "box": [
+            1138,
+            713,
+            197,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 394,
+        "class": "slider_head",
+        "spawn_frame": 2100,
+        "despawn_frame": 2146,
+        "location": [
+            728,
+            900
+        ],
+        "box": [
+            608,
+            796,
+            241,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 397,
+        "class": "hit_circle",
+        "spawn_frame": 2122,
+        "despawn_frame": 2150,
+        "location": [
+            485,
+            508
+        ],
+        "box": [
+            398,
+            421,
+            175,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 399,
+        "class": "slider_head",
+        "spawn_frame": 2142,
+        "despawn_frame": 2153,
+        "location": [
+            600,
+            877
+        ],
+        "box": [
+            493,
+            768,
+            215,
+            219
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 400,
+        "class": "slider_head",
+        "spawn_frame": 2151,
+        "despawn_frame": 2185,
+        "location": [
+            500,
+            513
+        ],
+        "box": [
+            393,
+            412,
+            215,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 402,
+        "class": "slider_head",
+        "spawn_frame": 2157,
+        "despawn_frame": 2165,
+        "location": [
+            582,
+            672
+        ],
+        "box": [
+            489,
+            574,
+            186,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 403,
+        "class": "hit_circle",
+        "spawn_frame": 2159,
+        "despawn_frame": 2190,
+        "location": [
+            1037,
+            590
+        ],
+        "box": [
+            945,
+            499,
+            185,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 404,
+        "class": "hit_circle",
+        "spawn_frame": 2168,
+        "despawn_frame": 2168,
+        "location": [
+            575,
+            667
+        ],
+        "box": [
+            476,
+            567,
+            199,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 405,
+        "class": "hit_circle",
+        "spawn_frame": 2182,
+        "despawn_frame": 2212,
+        "location": [
+            1138,
+            207
+        ],
+        "box": [
+            1051,
+            120,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 407,
+        "class": "slider_head",
+        "spawn_frame": 2187,
+        "despawn_frame": 2195,
+        "location": [
+            705,
+            482
+        ],
+        "box": [
+            608,
+            382,
+            194,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 408,
+        "class": "slider_head",
+        "spawn_frame": 2195,
+        "despawn_frame": 2213,
+        "location": [
+            1040,
+            585
+        ],
+        "box": [
+            933,
+            475,
+            214,
+            221
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 409,
+        "class": "hit_circle",
+        "spawn_frame": 2200,
+        "despawn_frame": 2200,
+        "location": [
+            699,
+            481
+        ],
+        "box": [
+            594,
+            380,
+            210,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 410,
+        "class": "slider_head",
+        "spawn_frame": 2213,
+        "despawn_frame": 2245,
+        "location": [
+            1139,
+            204
+        ],
+        "box": [
+            1034,
+            99,
+            211,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 411,
+        "class": "slider_head",
+        "spawn_frame": 2217,
+        "despawn_frame": 2227,
+        "location": [
+            1067,
+            381
+        ],
+        "box": [
+            971,
+            283,
+            193,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 412,
+        "class": "hit_circle",
+        "spawn_frame": 2219,
+        "despawn_frame": 2248,
+        "location": [
+            670,
+            412
+        ],
+        "box": [
+            582,
+            324,
+            176,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 413,
+        "class": "slider_head",
+        "spawn_frame": 2245,
+        "despawn_frame": 2256,
+        "location": [
+            929,
+            182
+        ],
+        "box": [
+            829,
+            83,
+            200,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 414,
+        "class": "slider_head",
+        "spawn_frame": 2247,
+        "despawn_frame": 2290,
+        "location": [
+            667,
+            407
+        ],
+        "box": [
+            564,
+            309,
+            206,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 415,
+        "class": "hit_circle",
+        "spawn_frame": 2256,
+        "despawn_frame": 2259,
+        "location": [
+            1143,
+            211
+        ],
+        "box": [
+            1052,
+            119,
+            183,
+            185
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 417,
+        "class": "hit_circle",
+        "spawn_frame": 2258,
+        "despawn_frame": 2260,
+        "location": [
+            928,
+            181
+        ],
+        "box": [
+            828,
+            81,
+            201,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 416,
+        "class": "hit_circle",
+        "spawn_frame": 2258,
+        "despawn_frame": 2279,
+        "location": [
+            671,
+            604
+        ],
+        "box": [
+            581,
+            514,
+            181,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 418,
+        "class": "slider_head",
+        "spawn_frame": 2274,
+        "despawn_frame": 2274,
+        "location": [
+            1890,
+            711
+        ],
+        "box": [
+            1861,
+            580,
+            59,
+            262
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 419,
+        "class": "slider_head",
+        "spawn_frame": 2275,
+        "despawn_frame": 2320,
+        "location": [
+            614,
+            606
+        ],
+        "box": [
+            461,
+            501,
+            307,
+            211
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 421,
+        "class": "slider_head",
+        "spawn_frame": 2277,
+        "despawn_frame": 2286,
+        "location": [
+            578,
+            407
+        ],
+        "box": [
+            462,
+            310,
+            232,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 420,
+        "class": "slider_head",
+        "spawn_frame": 2277,
+        "despawn_frame": 2287,
+        "location": [
+            613,
+            408
+        ],
+        "box": [
+            462,
+            307,
+            303,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 422,
+        "class": "hit_circle",
+        "spawn_frame": 2282,
+        "despawn_frame": 2307,
+        "location": [
+            820,
+            732
+        ],
+        "box": [
+            733,
+            645,
+            174,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 423,
+        "class": "slider_head",
+        "spawn_frame": 2308,
+        "despawn_frame": 2357,
+        "location": [
+            825,
+            736
+        ],
+        "box": [
+            734,
+            646,
+            183,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 424,
+        "class": "slider_head",
+        "spawn_frame": 2317,
+        "despawn_frame": 2317,
+        "location": [
+            564,
+            602
+        ],
+        "box": [
+            461,
+            503,
+            207,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 425,
+        "class": "hit_circle",
+        "spawn_frame": 2319,
+        "despawn_frame": 2338,
+        "location": [
+            820,
+            925
+        ],
+        "box": [
+            733,
+            837,
+            175,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 426,
+        "class": "slider_head",
+        "spawn_frame": 2338,
+        "despawn_frame": 2348,
+        "location": [
+            888,
+            732
+        ],
+        "box": [
+            735,
+            640,
+            307,
+            184
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 427,
+        "class": "slider_head",
+        "spawn_frame": 2339,
+        "despawn_frame": 2383,
+        "location": [
+            830,
+            932
+        ],
+        "box": [
+            729,
+            834,
+            202,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 429,
+        "class": "slider_head",
+        "spawn_frame": 2348,
+        "despawn_frame": 2348,
+        "location": [
+            950,
+            730
+        ],
+        "box": [
+            863,
+            638,
+            175,
+            184
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 430,
+        "class": "hit_circle",
+        "spawn_frame": 2362,
+        "despawn_frame": 2391,
+        "location": [
+            1242,
+            699
+        ],
+        "box": [
+            1154,
+            612,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 431,
+        "class": "slider_head",
+        "spawn_frame": 2364,
+        "despawn_frame": 2364,
+        "location": [
+            1890,
+            691
+        ],
+        "box": [
+            1863,
+            564,
+            55,
+            255
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 432,
+        "class": "slider_head",
+        "spawn_frame": 2369,
+        "despawn_frame": 2394,
+        "location": [
+            833,
+            745
+        ],
+        "box": [
+            722,
+            639,
+            223,
+            213
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 434,
+        "class": "slider_head",
+        "spawn_frame": 2392,
+        "despawn_frame": 2422,
+        "location": [
+            1245,
+            695
+        ],
+        "box": [
+            1141,
+            586,
+            208,
+            218
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 435,
+        "class": "hit_circle",
+        "spawn_frame": 2399,
+        "despawn_frame": 2428,
+        "location": [
+            1009,
+            183
+        ],
+        "box": [
+            919,
+            94,
+            181,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 436,
+        "class": "hit_circle",
+        "spawn_frame": 2422,
+        "despawn_frame": 2452,
+        "location": [
+            582,
+            209
+        ],
+        "box": [
+            495,
+            122,
+            174,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 437,
+        "class": "slider_head",
+        "spawn_frame": 2425,
+        "despawn_frame": 2435,
+        "location": [
+            1235,
+            481
+        ],
+        "box": [
+            1138,
+            382,
+            194,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 438,
+        "class": "slider_head",
+        "spawn_frame": 2431,
+        "despawn_frame": 2453,
+        "location": [
+            999,
+            184
+        ],
+        "box": [
+            894,
+            80,
+            210,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 439,
+        "class": "hit_circle",
+        "spawn_frame": 2439,
+        "despawn_frame": 2439,
+        "location": [
+            1232,
+            478
+        ],
+        "box": [
+            1133,
+            378,
+            198,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 440,
+        "class": "slider_head",
+        "spawn_frame": 2453,
+        "despawn_frame": 2483,
+        "location": [
+            582,
+            226
+        ],
+        "box": [
+            481,
+            123,
+            202,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 441,
+        "class": "slider_head",
+        "spawn_frame": 2454,
+        "despawn_frame": 2466,
+        "location": [
+            782,
+            193
+        ],
+        "box": [
+            684,
+            95,
+            196,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 442,
+        "class": "hit_circle",
+        "spawn_frame": 2459,
+        "despawn_frame": 2487,
+        "location": [
+            884,
+            686
+        ],
+        "box": [
+            796,
+            600,
+            176,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 443,
+        "class": "slider_head",
+        "spawn_frame": 2477,
+        "despawn_frame": 2477,
+        "location": [
+            1889,
+            712
+        ],
+        "box": [
+            1859,
+            582,
+            60,
+            260
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 444,
+        "class": "slider_head",
+        "spawn_frame": 2484,
+        "despawn_frame": 2532,
+        "location": [
+            882,
+            699
+        ],
+        "box": [
+            784,
+            597,
+            196,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 445,
+        "class": "slider_head",
+        "spawn_frame": 2485,
+        "despawn_frame": 2495,
+        "location": [
+            600,
+            438
+        ],
+        "box": [
+            501,
+            338,
+            198,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 446,
+        "class": "hit_circle",
+        "spawn_frame": 2496,
+        "despawn_frame": 2516,
+        "location": [
+            1075,
+            668
+        ],
+        "box": [
+            987,
+            582,
+            177,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 447,
+        "class": "hit_circle",
+        "spawn_frame": 2497,
+        "despawn_frame": 2498,
+        "location": [
+            600,
+            444
+        ],
+        "box": [
+            502,
+            348,
+            196,
+            192
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 448,
+        "class": "slider_head",
+        "spawn_frame": 2514,
+        "despawn_frame": 2514,
+        "location": [
+            1889,
+            697
+        ],
+        "box": [
+            1862,
+            571,
+            54,
+            253
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 449,
+        "class": "slider_head",
+        "spawn_frame": 2515,
+        "despawn_frame": 2547,
+        "location": [
+            1084,
+            671
+        ],
+        "box": [
+            982,
+            574,
+            204,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 450,
+        "class": "slider_head",
+        "spawn_frame": 2518,
+        "despawn_frame": 2519,
+        "location": [
+            874,
+            801
+        ],
+        "box": [
+            779,
+            704,
+            190,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 451,
+        "class": "hit_circle",
+        "spawn_frame": 2528,
+        "despawn_frame": 2547,
+        "location": [
+            1177,
+            516
+        ],
+        "box": [
+            1089,
+            429,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 452,
+        "class": "slider_head",
+        "spawn_frame": 2544,
+        "despawn_frame": 2593,
+        "location": [
+            1184,
+            529
+        ],
+        "box": [
+            1090,
+            439,
+            189,
+            180
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 453,
+        "class": "slider_head",
+        "spawn_frame": 2549,
+        "despawn_frame": 2561,
+        "location": [
+            1089,
+            732
+        ],
+        "box": [
+            980,
+            589,
+            219,
+            287
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 454,
+        "class": "hit_circle",
+        "spawn_frame": 2558,
+        "despawn_frame": 2579,
+        "location": [
+            1367,
+            509
+        ],
+        "box": [
+            1278,
+            422,
+            178,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 455,
+        "class": "slider_head",
+        "spawn_frame": 2564,
+        "despawn_frame": 2564,
+        "location": [
+            1161,
+            406
+        ],
+        "box": [
+            1073,
+            317,
+            177,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 456,
+        "class": "slider_head",
+        "spawn_frame": 2574,
+        "despawn_frame": 2574,
+        "location": [
+            1891,
+            700
+        ],
+        "box": [
+            1863,
+            577,
+            57,
+            247
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 457,
+        "class": "slider_head",
+        "spawn_frame": 2575,
+        "despawn_frame": 2623,
+        "location": [
+            1374,
+            504
+        ],
+        "box": [
+            1274,
+            404,
+            201,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 458,
+        "class": "slider_head",
+        "spawn_frame": 2587,
+        "despawn_frame": 2590,
+        "location": [
+            1154,
+            414
+        ],
+        "box": [
+            1056,
+            320,
+            197,
+            188
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 459,
+        "class": "slider_head",
+        "spawn_frame": 2593,
+        "despawn_frame": 2595,
+        "location": [
+            1374,
+            436
+        ],
+        "box": [
+            1282,
+            308,
+            184,
+            257
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 461,
+        "class": "slider_head",
+        "spawn_frame": 2595,
+        "despawn_frame": 2595,
+        "location": [
+            1382,
+            387
+        ],
+        "box": [
+            1295,
+            311,
+            175,
+            152
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 460,
+        "class": "hit_circle",
+        "spawn_frame": 2595,
+        "despawn_frame": 2613,
+        "location": [
+            1286,
+            686
+        ],
+        "box": [
+            1197,
+            598,
+            178,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 462,
+        "class": "hit_circle",
+        "spawn_frame": 2609,
+        "despawn_frame": 2624,
+        "location": [
+            1093,
+            869
+        ],
+        "box": [
+            1001,
+            780,
+            184,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 463,
+        "class": "slider_head",
+        "spawn_frame": 2618,
+        "despawn_frame": 2649,
+        "location": [
+            1282,
+            695
+        ],
+        "box": [
+            1177,
+            587,
+            211,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 464,
+        "class": "hit_circle",
+        "spawn_frame": 2625,
+        "despawn_frame": 2639,
+        "location": [
+            897,
+            648
+        ],
+        "box": [
+            806,
+            559,
+            182,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 466,
+        "class": "hit_circle",
+        "spawn_frame": 2639,
+        "despawn_frame": 2654,
+        "location": [
+            690,
+            888
+        ],
+        "box": [
+            598,
+            801,
+            184,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 467,
+        "class": "slider_head",
+        "spawn_frame": 2644,
+        "despawn_frame": 2667,
+        "location": [
+            1078,
+            750
+        ],
+        "box": [
+            982,
+            651,
+            193,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 468,
+        "class": "slider_head",
+        "spawn_frame": 2651,
+        "despawn_frame": 2653,
+        "location": [
+            1277,
+            799
+        ],
+        "box": [
+            1180,
+            697,
+            194,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 469,
+        "class": "hit_circle",
+        "spawn_frame": 2654,
+        "despawn_frame": 2657,
+        "location": [
+            1275,
+            805
+        ],
+        "box": [
+            1177,
+            706,
+            196,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 471,
+        "class": "slider_head",
+        "spawn_frame": 2660,
+        "despawn_frame": 2678,
+        "location": [
+            896,
+            654
+        ],
+        "box": [
+            791,
+            542,
+            210,
+            224
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 472,
+        "class": "hit_circle",
+        "spawn_frame": 2662,
+        "despawn_frame": 2691,
+        "location": [
+            389,
+            645
+        ],
+        "box": [
+            301,
+            557,
+            177,
+            176
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 474,
+        "class": "hit_circle",
+        "spawn_frame": 2669,
+        "despawn_frame": 2670,
+        "location": [
+            1078,
+            749
+        ],
+        "box": [
+            980,
+            650,
+            197,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 475,
+        "class": "slider_head",
+        "spawn_frame": 2676,
+        "despawn_frame": 2691,
+        "location": [
+            687,
+            890
+        ],
+        "box": [
+            582,
+            787,
+            211,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 476,
+        "class": "slider_head",
+        "spawn_frame": 2681,
+        "despawn_frame": 2682,
+        "location": [
+            874,
+            775
+        ],
+        "box": [
+            775,
+            675,
+            199,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 477,
+        "class": "hit_circle",
+        "spawn_frame": 2684,
+        "despawn_frame": 2685,
+        "location": [
+            875,
+            779
+        ],
+        "box": [
+            774,
+            679,
+            202,
+            200
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 480,
+        "class": "slider_head",
+        "spawn_frame": 2692,
+        "despawn_frame": 2706,
+        "location": [
+            421,
+            857
+        ],
+        "box": [
+            323,
+            760,
+            196,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 479,
+        "class": "hit_circle",
+        "spawn_frame": 2692,
+        "despawn_frame": 2716,
+        "location": [
+            582,
+            244
+        ],
+        "box": [
+            495,
+            158,
+            175,
+            172
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 481,
+        "class": "slider_head",
+        "spawn_frame": 2692,
+        "despawn_frame": 2722,
+        "location": [
+            392,
+            642
+        ],
+        "box": [
+            285,
+            532,
+            214,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 482,
+        "class": "hit_circle",
+        "spawn_frame": 2707,
+        "despawn_frame": 2710,
+        "location": [
+            426,
+            861
+        ],
+        "box": [
+            319,
+            758,
+            215,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 483,
+        "class": "hit_circle",
+        "spawn_frame": 2714,
+        "despawn_frame": 2730,
+        "location": [
+            843,
+            395
+        ],
+        "box": [
+            752,
+            304,
+            183,
+            182
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 484,
+        "class": "slider_head",
+        "spawn_frame": 2717,
+        "despawn_frame": 2753,
+        "location": [
+            597,
+            253
+        ],
+        "box": [
+            487,
+            150,
+            220,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 485,
+        "class": "slider_head",
+        "spawn_frame": 2723,
+        "despawn_frame": 2737,
+        "location": [
+            438,
+            389
+        ],
+        "box": [
+            343,
+            291,
+            190,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 486,
+        "class": "hit_circle",
+        "spawn_frame": 2730,
+        "despawn_frame": 2759,
+        "location": [
+            1102,
+            227
+        ],
+        "box": [
+            1012,
+            138,
+            181,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 487,
+        "class": "slider_head",
+        "spawn_frame": 2737,
+        "despawn_frame": 2769,
+        "location": [
+            923,
+            390
+        ],
+        "box": [
+            782,
+            291,
+            282,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 489,
+        "class": "hit_circle",
+        "spawn_frame": 2739,
+        "despawn_frame": 2739,
+        "location": [
+            438,
+            391
+        ],
+        "box": [
+            339,
+            290,
+            199,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 490,
+        "class": "slider_head",
+        "spawn_frame": 2745,
+        "despawn_frame": 2799,
+        "location": [
+            1353,
+            230
+        ],
+        "box": [
+            1257,
+            137,
+            192,
+            186
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 491,
+        "class": "slider_head",
+        "spawn_frame": 2767,
+        "despawn_frame": 2783,
+        "location": [
+            1108,
+            225
+        ],
+        "box": [
+            1000,
+            122,
+            216,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 493,
+        "class": "slider_head",
+        "spawn_frame": 2769,
+        "despawn_frame": 2769,
+        "location": [
+            849,
+            397
+        ],
+        "box": [
+            741,
+            293,
+            216,
+            209
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 492,
+        "class": "slider_head",
+        "spawn_frame": 2769,
+        "despawn_frame": 2771,
+        "location": [
+            986,
+            384
+        ],
+        "box": [
+            904,
+            289,
+            165,
+            191
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 494,
+        "class": "hit_circle",
+        "spawn_frame": 2774,
+        "despawn_frame": 2784,
+        "location": [
+            764,
+            450
+        ],
+        "box": [
+            671,
+            361,
+            187,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 495,
+        "class": "hit_circle",
+        "spawn_frame": 2790,
+        "despawn_frame": 2793,
+        "location": [
+            468,
+            568
+        ],
+        "box": [
+            372,
+            472,
+            193,
+            193
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 496,
+        "class": "slider_head",
+        "spawn_frame": 2800,
+        "despawn_frame": 2811,
+        "location": [
+            1103,
+            227
+        ],
+        "box": [
+            1005,
+            128,
+            197,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 497,
+        "class": "hit_circle",
+        "spawn_frame": 2804,
+        "despawn_frame": 2833,
+        "location": [
+            580,
+            811
+        ],
+        "box": [
+            491,
+            724,
+            178,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 498,
+        "class": "slider_head",
+        "spawn_frame": 2812,
+        "despawn_frame": 2830,
+        "location": [
+            760,
+            451
+        ],
+        "box": [
+            659,
+            351,
+            202,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 499,
+        "class": "hit_circle",
+        "spawn_frame": 2814,
+        "despawn_frame": 2814,
+        "location": [
+            1101,
+            228
+        ],
+        "box": [
+            1001,
+            129,
+            201,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 500,
+        "class": "hit_circle",
+        "spawn_frame": 2819,
+        "despawn_frame": 2838,
+        "location": [
+            856,
+            913
+        ],
+        "box": [
+            765,
+            824,
+            182,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 502,
+        "class": "slider_head",
+        "spawn_frame": 2828,
+        "despawn_frame": 2828,
+        "location": [
+            488,
+            527
+        ],
+        "box": [
+            401,
+            425,
+            175,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 501,
+        "class": "slider_head",
+        "spawn_frame": 2828,
+        "despawn_frame": 2844,
+        "location": [
+            473,
+            566
+        ],
+        "box": [
+            368,
+            456,
+            210,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 504,
+        "class": "slider_head",
+        "spawn_frame": 2830,
+        "despawn_frame": 2833,
+        "location": [
+            632,
+            442
+        ],
+        "box": [
+            533,
+            343,
+            198,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 505,
+        "class": "hit_circle",
+        "spawn_frame": 2835,
+        "despawn_frame": 2835,
+        "location": [
+            632,
+            441
+        ],
+        "box": [
+            532,
+            343,
+            200,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 506,
+        "class": "slider_head",
+        "spawn_frame": 2836,
+        "despawn_frame": 2837,
+        "location": [
+            1889,
+            696
+        ],
+        "box": [
+            1862,
+            567,
+            55,
+            258
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 507,
+        "class": "slider_head",
+        "spawn_frame": 2841,
+        "despawn_frame": 2874,
+        "location": [
+            863,
+            910
+        ],
+        "box": [
+            755,
+            803,
+            217,
+            214
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 508,
+        "class": "hit_circle",
+        "spawn_frame": 2842,
+        "despawn_frame": 2871,
+        "location": [
+            1252,
+            920
+        ],
+        "box": [
+            1163,
+            832,
+            178,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 509,
+        "class": "slider_head",
+        "spawn_frame": 2843,
+        "despawn_frame": 2862,
+        "location": [
+            696,
+            822
+        ],
+        "box": [
+            595,
+            720,
+            202,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 511,
+        "class": "slider_head",
+        "spawn_frame": 2846,
+        "despawn_frame": 2849,
+        "location": [
+            457,
+            680
+        ],
+        "box": [
+            358,
+            582,
+            198,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 512,
+        "class": "hit_circle",
+        "spawn_frame": 2864,
+        "despawn_frame": 2865,
+        "location": [
+            695,
+            825
+        ],
+        "box": [
+            596,
+            724,
+            199,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 513,
+        "class": "slider_head",
+        "spawn_frame": 2872,
+        "despawn_frame": 2903,
+        "location": [
+            1256,
+            915
+        ],
+        "box": [
+            1150,
+            804,
+            212,
+            223
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 515,
+        "class": "hit_circle",
+        "spawn_frame": 2879,
+        "despawn_frame": 2899,
+        "location": [
+            1405,
+            377
+        ],
+        "box": [
+            1316,
+            288,
+            179,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 516,
+        "class": "slider_head",
+        "spawn_frame": 2894,
+        "despawn_frame": 2894,
+        "location": [
+            1884,
+            533
+        ],
+        "box": [
+            1850,
+            458,
+            69,
+            150
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 517,
+        "class": "slider_head",
+        "spawn_frame": 2897,
+        "despawn_frame": 2897,
+        "location": [
+            1889,
+            695
+        ],
+        "box": [
+            1863,
+            575,
+            53,
+            241
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 519,
+        "class": "hit_circle",
+        "spawn_frame": 2902,
+        "despawn_frame": 2930,
+        "location": [
+            998,
+            361
+        ],
+        "box": [
+            910,
+            273,
+            176,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 520,
+        "class": "slider_head",
+        "spawn_frame": 2902,
+        "despawn_frame": 2933,
+        "location": [
+            1396,
+            380
+        ],
+        "box": [
+            1290,
+            275,
+            212,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 522,
+        "class": "slider_head",
+        "spawn_frame": 2904,
+        "despawn_frame": 2920,
+        "location": [
+            1297,
+            705
+        ],
+        "box": [
+            1199,
+            605,
+            196,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 523,
+        "class": "hit_circle",
+        "spawn_frame": 2919,
+        "despawn_frame": 2919,
+        "location": [
+            1296,
+            706
+        ],
+        "box": [
+            1196,
+            604,
+            201,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 524,
+        "class": "slider_head",
+        "spawn_frame": 2931,
+        "despawn_frame": 2964,
+        "location": [
+            1007,
+            368
+        ],
+        "box": [
+            897,
+            251,
+            221,
+            235
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 526,
+        "class": "slider_head",
+        "spawn_frame": 2934,
+        "despawn_frame": 2947,
+        "location": [
+            1184,
+            403
+        ],
+        "box": [
+            1088,
+            306,
+            193,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 527,
+        "class": "hit_circle",
+        "spawn_frame": 2939,
+        "despawn_frame": 2962,
+        "location": [
+            655,
+            732
+        ],
+        "box": [
+            567,
+            645,
+            177,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 528,
+        "class": "slider_head",
+        "spawn_frame": 2963,
+        "despawn_frame": 3011,
+        "location": [
+            601,
+            745
+        ],
+        "box": [
+            453,
+            635,
+            296,
+            220
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 529,
+        "class": "slider_head",
+        "spawn_frame": 2966,
+        "despawn_frame": 2975,
+        "location": [
+            964,
+            582
+        ],
+        "box": [
+            866,
+            484,
+            197,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 531,
+        "class": "hit_circle",
+        "spawn_frame": 2977,
+        "despawn_frame": 2992,
+        "location": [
+            794,
+            853
+        ],
+        "box": [
+            707,
+            766,
+            175,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 532,
+        "class": "slider_head",
+        "spawn_frame": 2993,
+        "despawn_frame": 3044,
+        "location": [
+            791,
+            854
+        ],
+        "box": [
+            701,
+            765,
+            181,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 533,
+        "class": "slider_head",
+        "spawn_frame": 2994,
+        "despawn_frame": 2994,
+        "location": [
+            1890,
+            697
+        ],
+        "box": [
+            1862,
+            568,
+            56,
+            258
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 534,
+        "class": "hit_circle",
+        "spawn_frame": 3008,
+        "despawn_frame": 3023,
+        "location": [
+            919,
+            735
+        ],
+        "box": [
+            832,
+            648,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 536,
+        "class": "slider_head",
+        "spawn_frame": 3024,
+        "despawn_frame": 3024,
+        "location": [
+            1889,
+            698
+        ],
+        "box": [
+            1863,
+            570,
+            53,
+            256
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 535,
+        "class": "slider_head",
+        "spawn_frame": 3024,
+        "despawn_frame": 3070,
+        "location": [
+            993,
+            736
+        ],
+        "box": [
+            852,
+            634,
+            283,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 537,
+        "class": "slider_head",
+        "spawn_frame": 3027,
+        "despawn_frame": 3036,
+        "location": [
+            801,
+            955
+        ],
+        "box": [
+            702,
+            845,
+            199,
+            221
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 539,
+        "class": "hit_circle",
+        "spawn_frame": 3038,
+        "despawn_frame": 3052,
+        "location": [
+            782,
+            613
+        ],
+        "box": [
+            696,
+            527,
+            173,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 540,
+        "class": "slider_head",
+        "spawn_frame": 3053,
+        "despawn_frame": 3099,
+        "location": [
+            782,
+            558
+        ],
+        "box": [
+            679,
+            405,
+            207,
+            307
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 541,
+        "class": "slider_head",
+        "spawn_frame": 3054,
+        "despawn_frame": 3054,
+        "location": [
+            1889,
+            698
+        ],
+        "box": [
+            1862,
+            569,
+            55,
+            259
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 542,
+        "class": "slider_head",
+        "spawn_frame": 3057,
+        "despawn_frame": 3073,
+        "location": [
+            927,
+            738
+        ],
+        "box": [
+            828,
+            640,
+            198,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 543,
+        "class": "hit_circle",
+        "spawn_frame": 3062,
+        "despawn_frame": 3062,
+        "location": [
+            646,
+            738
+        ],
+        "box": [
+            552,
+            650,
+            189,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 544,
+        "class": "slider_head",
+        "spawn_frame": 3073,
+        "despawn_frame": 3073,
+        "location": [
+            777,
+            486
+        ],
+        "box": [
+            688,
+            409,
+            178,
+            154
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 545,
+        "class": "hit_circle",
+        "spawn_frame": 3075,
+        "despawn_frame": 3090,
+        "location": [
+            433,
+            576
+        ],
+        "box": [
+            341,
+            485,
+            184,
+            183
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 547,
+        "class": "slider_head",
+        "spawn_frame": 3084,
+        "despawn_frame": 3084,
+        "location": [
+            1889,
+            697
+        ],
+        "box": [
+            1861,
+            565,
+            56,
+            265
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 548,
+        "class": "slider_head",
+        "spawn_frame": 3087,
+        "despawn_frame": 3103,
+        "location": [
+            787,
+            614
+        ],
+        "box": [
+            689,
+            515,
+            197,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 549,
+        "class": "hit_circle",
+        "spawn_frame": 3090,
+        "despawn_frame": 3102,
+        "location": [
+            576,
+            312
+        ],
+        "box": [
+            482,
+            222,
+            188,
+            181
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 550,
+        "class": "slider_head",
+        "spawn_frame": 3092,
+        "despawn_frame": 3118,
+        "location": [
+            553,
+            723
+        ],
+        "box": [
+            454,
+            624,
+            199,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 551,
+        "class": "slider_head",
+        "spawn_frame": 3098,
+        "despawn_frame": 3099,
+        "location": [
+            777,
+            507
+        ],
+        "box": [
+            677,
+            407,
+            200,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 552,
+        "class": "hit_circle",
+        "spawn_frame": 3108,
+        "despawn_frame": 3151,
+        "location": [
+            845,
+            468
+        ],
+        "box": [
+            746,
+            371,
+            199,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 553,
+        "class": "slider_head",
+        "spawn_frame": 3109,
+        "despawn_frame": 3130,
+        "location": [
+            442,
+            486
+        ],
+        "box": [
+            339,
+            362,
+            207,
+            249
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 554,
+        "class": "hit_circle",
+        "spawn_frame": 3112,
+        "despawn_frame": 3116,
+        "location": [
+            1005,
+            349
+        ],
+        "box": [
+            916,
+            260,
+            179,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 556,
+        "class": "hit_circle",
+        "spawn_frame": 3120,
+        "despawn_frame": 3140,
+        "location": [
+            1180,
+            473
+        ],
+        "box": [
+            1092,
+            386,
+            176,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 557,
+        "class": "hit_circle",
+        "spawn_frame": 3121,
+        "despawn_frame": 3122,
+        "location": [
+            570,
+            728
+        ],
+        "box": [
+            449,
+            626,
+            243,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 558,
+        "class": "slider_head",
+        "spawn_frame": 3126,
+        "despawn_frame": 3142,
+        "location": [
+            584,
+            309
+        ],
+        "box": [
+            475,
+            200,
+            218,
+            219
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 559,
+        "class": "slider_head",
+        "spawn_frame": 3130,
+        "despawn_frame": 3134,
+        "location": [
+            446,
+            462
+        ],
+        "box": [
+            347,
+            362,
+            199,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 560,
+        "class": "slider_head",
+        "spawn_frame": 3140,
+        "despawn_frame": 3147,
+        "location": [
+            710,
+            331
+        ],
+        "box": [
+            624,
+            235,
+            173,
+            193
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 561,
+        "class": "hit_circle",
+        "spawn_frame": 3141,
+        "despawn_frame": 3159,
+        "location": [
+            1007,
+            349
+        ],
+        "box": [
+            906,
+            251,
+            202,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 562,
+        "class": "hit_circle",
+        "spawn_frame": 3142,
+        "despawn_frame": 3173,
+        "location": [
+            1523,
+            335
+        ],
+        "box": [
+            1436,
+            248,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 563,
+        "class": "slider_head",
+        "spawn_frame": 3146,
+        "despawn_frame": 3172,
+        "location": [
+            1186,
+            472
+        ],
+        "box": [
+            1079,
+            366,
+            215,
+            212
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 564,
+        "class": "hit_circle",
+        "spawn_frame": 3148,
+        "despawn_frame": 3150,
+        "location": [
+            699,
+            331
+        ],
+        "box": [
+            601,
+            232,
+            197,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 565,
+        "class": "hit_circle",
+        "spawn_frame": 3172,
+        "despawn_frame": 3175,
+        "location": [
+            1103,
+            193
+        ],
+        "box": [
+            1010,
+            104,
+            186,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 566,
+        "class": "slider_head",
+        "spawn_frame": 3172,
+        "despawn_frame": 3203,
+        "location": [
+            1523,
+            338
+        ],
+        "box": [
+            1415,
+            232,
+            216,
+            212
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 567,
+        "class": "slider_head",
+        "spawn_frame": 3178,
+        "despawn_frame": 3186,
+        "location": [
+            1444,
+            540
+        ],
+        "box": [
+            1342,
+            439,
+            205,
+            202
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 568,
+        "class": "hit_circle",
+        "spawn_frame": 3179,
+        "despawn_frame": 3188,
+        "location": [
+            962,
+            307
+        ],
+        "box": [
+            871,
+            216,
+            183,
+            183
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 569,
+        "class": "hit_circle",
+        "spawn_frame": 3187,
+        "despawn_frame": 3219,
+        "location": [
+            1102,
+            192
+        ],
+        "box": [
+            1002,
+            93,
+            201,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 570,
+        "class": "hit_circle",
+        "spawn_frame": 3195,
+        "despawn_frame": 3201,
+        "location": [
+            709,
+            175
+        ],
+        "box": [
+            618,
+            88,
+            183,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 572,
+        "class": "slider_head",
+        "spawn_frame": 3206,
+        "despawn_frame": 3216,
+        "location": [
+            1284,
+            263
+        ],
+        "box": [
+            1187,
+            166,
+            195,
+            194
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 573,
+        "class": "hit_circle",
+        "spawn_frame": 3209,
+        "despawn_frame": 3239,
+        "location": [
+            415,
+            283
+        ],
+        "box": [
+            323,
+            194,
+            185,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 575,
+        "class": "hit_circle",
+        "spawn_frame": 3217,
+        "despawn_frame": 3219,
+        "location": [
+            1285,
+            263
+        ],
+        "box": [
+            1185,
+            164,
+            201,
+            199
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 574,
+        "class": "slider_head",
+        "spawn_frame": 3217,
+        "despawn_frame": 3235,
+        "location": [
+            941,
+            312
+        ],
+        "box": [
+            823,
+            207,
+            237,
+            210
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 576,
+        "class": "slider_head",
+        "spawn_frame": 3220,
+        "despawn_frame": 3251,
+        "location": [
+            665,
+            171
+        ],
+        "box": [
+            520,
+            67,
+            290,
+            209
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 577,
+        "class": "slider_head",
+        "spawn_frame": 3226,
+        "despawn_frame": 3227,
+        "location": [
+            1888,
+            698
+        ],
+        "box": [
+            1862,
+            571,
+            53,
+            254
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 578,
+        "class": "slider_head",
+        "spawn_frame": 3236,
+        "despawn_frame": 3240,
+        "location": [
+            841,
+            317
+        ],
+        "box": [
+            743,
+            219,
+            197,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 579,
+        "class": "hit_circle",
+        "spawn_frame": 3239,
+        "despawn_frame": 3260,
+        "location": [
+            697,
+            806
+        ],
+        "box": [
+            606,
+            717,
+            183,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 580,
+        "class": "hit_circle",
+        "spawn_frame": 3241,
+        "despawn_frame": 3241,
+        "location": [
+            840,
+            317
+        ],
+        "box": [
+            742,
+            218,
+            197,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 581,
+        "class": "slider_head",
+        "spawn_frame": 3247,
+        "despawn_frame": 3262,
+        "location": [
+            415,
+            287
+        ],
+        "box": [
+            309,
+            181,
+            213,
+            213
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 582,
+        "class": "slider_head",
+        "spawn_frame": 3250,
+        "despawn_frame": 3254,
+        "location": [
+            584,
+            164
+        ],
+        "box": [
+            485,
+            65,
+            199,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 583,
+        "class": "slider_head",
+        "spawn_frame": 3251,
+        "despawn_frame": 3251,
+        "location": [
+            705,
+            174
+        ],
+        "box": [
+            603,
+            67,
+            205,
+            214
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 584,
+        "class": "hit_circle",
+        "spawn_frame": 3255,
+        "despawn_frame": 3271,
+        "location": [
+            956,
+            653
+        ],
+        "box": [
+            865,
+            564,
+            183,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 585,
+        "class": "slider_head",
+        "spawn_frame": 3261,
+        "despawn_frame": 3295,
+        "location": [
+            703,
+            807
+        ],
+        "box": [
+            596,
+            706,
+            215,
+            203
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 586,
+        "class": "slider_head",
+        "spawn_frame": 3265,
+        "despawn_frame": 3275,
+        "location": [
+            394,
+            539
+        ],
+        "box": [
+            299,
+            442,
+            190,
+            195
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 587,
+        "class": "hit_circle",
+        "spawn_frame": 3269,
+        "despawn_frame": 3291,
+        "location": [
+            1264,
+            680
+        ],
+        "box": [
+            1173,
+            590,
+            182,
+            181
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 589,
+        "class": "slider_head",
+        "spawn_frame": 3276,
+        "despawn_frame": 3276,
+        "location": [
+            950,
+            652
+        ],
+        "box": [
+            866,
+            567,
+            168,
+            171
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 590,
+        "class": "hit_circle",
+        "spawn_frame": 3277,
+        "despawn_frame": 3278,
+        "location": [
+            392,
+            543
+        ],
+        "box": [
+            293,
+            447,
+            198,
+            192
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 591,
+        "class": "hit_circle",
+        "spawn_frame": 3286,
+        "despawn_frame": 3299,
+        "location": [
+            1435,
+            470
+        ],
+        "box": [
+            1344,
+            381,
+            182,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 592,
+        "class": "slider_head",
+        "spawn_frame": 3290,
+        "despawn_frame": 3314,
+        "location": [
+            1079,
+            664
+        ],
+        "box": [
+            980,
+            562,
+            198,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 594,
+        "class": "slider_head",
+        "spawn_frame": 3295,
+        "despawn_frame": 3298,
+        "location": [
+            827,
+            797
+        ],
+        "box": [
+            730,
+            694,
+            194,
+            207
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 596,
+        "class": "slider_head",
+        "spawn_frame": 3299,
+        "despawn_frame": 3306,
+        "location": [
+            1883,
+            536
+        ],
+        "box": [
+            1848,
+            458,
+            71,
+            157
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 595,
+        "class": "hit_circle",
+        "spawn_frame": 3299,
+        "despawn_frame": 3312,
+        "location": [
+            1335,
+            192
+        ],
+        "box": [
+            1244,
+            103,
+            183,
+            178
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 597,
+        "class": "slider_head",
+        "spawn_frame": 3301,
+        "despawn_frame": 3302,
+        "location": [
+            1889,
+            697
+        ],
+        "box": [
+            1863,
+            573,
+            52,
+            248
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 598,
+        "class": "slider_head",
+        "spawn_frame": 3302,
+        "despawn_frame": 3329,
+        "location": [
+            1278,
+            565
+        ],
+        "box": [
+            1182,
+            467,
+            192,
+            196
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 599,
+        "class": "slider_head",
+        "spawn_frame": 3314,
+        "despawn_frame": 3337,
+        "location": [
+            1428,
+            462
+        ],
+        "box": [
+            1327,
+            355,
+            202,
+            215
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 600,
+        "class": "hit_circle",
+        "spawn_frame": 3322,
+        "despawn_frame": 3351,
+        "location": [
+            954,
+            156
+        ],
+        "box": [
+            866,
+            69,
+            177,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 602,
+        "class": "slider_head",
+        "spawn_frame": 3331,
+        "despawn_frame": 3332,
+        "location": [
+            1889,
+            696
+        ],
+        "box": [
+            1862,
+            572,
+            54,
+            248
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 603,
+        "class": "slider_head",
+        "spawn_frame": 3335,
+        "despawn_frame": 3343,
+        "location": [
+            1421,
+            357
+        ],
+        "box": [
+            1323,
+            255,
+            197,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 604,
+        "class": "slider_head",
+        "spawn_frame": 3335,
+        "despawn_frame": 3352,
+        "location": [
+            1328,
+            190
+        ],
+        "box": [
+            1220,
+            86,
+            217,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 605,
+        "class": "hit_circle",
+        "spawn_frame": 3345,
+        "despawn_frame": 3347,
+        "location": [
+            1421,
+            353
+        ],
+        "box": [
+            1320,
+            253,
+            202,
+            201
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 606,
+        "class": "slider_head",
+        "spawn_frame": 3352,
+        "despawn_frame": 3384,
+        "location": [
+            956,
+            156
+        ],
+        "box": [
+            849,
+            46,
+            215,
+            221
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 607,
+        "class": "slider_head",
+        "spawn_frame": 3356,
+        "despawn_frame": 3366,
+        "location": [
+            1121,
+            240
+        ],
+        "box": [
+            1027,
+            142,
+            189,
+            197
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 608,
+        "class": "hit_circle",
+        "spawn_frame": 3359,
+        "despawn_frame": 3381,
+        "location": [
+            609,
+            529
+        ],
+        "box": [
+            515,
+            441,
+            188,
+            177
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 609,
+        "class": "hit_circle",
+        "spawn_frame": 3382,
+        "despawn_frame": 3410,
+        "location": [
+            978,
+            489
+        ],
+        "box": [
+            891,
+            402,
+            174,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 612,
+        "class": "slider_head",
+        "spawn_frame": 3385,
+        "despawn_frame": 3396,
+        "location": [
+            741,
+            210
+        ],
+        "box": [
+            642,
+            111,
+            199,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 613,
+        "class": "slider_head",
+        "spawn_frame": 3388,
+        "despawn_frame": 3414,
+        "location": [
+            711,
+            547
+        ],
+        "box": [
+            594,
+            440,
+            234,
+            215
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 614,
+        "class": "hit_circle",
+        "spawn_frame": 3399,
+        "despawn_frame": 3400,
+        "location": [
+            744,
+            210
+        ],
+        "box": [
+            637,
+            107,
+            214,
+            206
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 615,
+        "class": "slider_head",
+        "spawn_frame": 3411,
+        "despawn_frame": 3443,
+        "location": [
+            992,
+            497
+        ],
+        "box": [
+            880,
+            389,
+            225,
+            216
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 617,
+        "class": "slider_head",
+        "spawn_frame": 3414,
+        "despawn_frame": 3425,
+        "location": [
+            819,
+            580
+        ],
+        "box": [
+            718,
+            478,
+            202,
+            205
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 618,
+        "class": "hit_circle",
+        "spawn_frame": 3419,
+        "despawn_frame": 3448,
+        "location": [
+            1426,
+            798
+        ],
+        "box": [
+            1339,
+            711,
+            175,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 619,
+        "class": "slider_head",
+        "spawn_frame": 3427,
+        "despawn_frame": 3433,
+        "location": [
+            1866,
+            548
+        ],
+        "box": [
+            1814,
+            456,
+            105,
+            184
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 620,
+        "class": "slider_head",
+        "spawn_frame": 3447,
+        "despawn_frame": 3456,
+        "location": [
+            1202,
+            544
+        ],
+        "box": [
+            1105,
+            445,
+            195,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 621,
+        "class": "slider_head",
+        "spawn_frame": 3448,
+        "despawn_frame": 3478,
+        "location": [
+            1431,
+            796
+        ],
+        "box": [
+            1337,
+            710,
+            189,
+            173
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 623,
+        "class": "hit_circle",
+        "spawn_frame": 3457,
+        "despawn_frame": 3472,
+        "location": [
+            1248,
+            820
+        ],
+        "box": [
+            1160,
+            733,
+            177,
+            174
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 624,
+        "class": "slider_head",
+        "spawn_frame": 3473,
+        "despawn_frame": 3508,
+        "location": [
+            1258,
+            822
+        ],
+        "box": [
+            1166,
+            727,
+            185,
+            191
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 625,
+        "class": "slider_head",
+        "spawn_frame": 3474,
+        "despawn_frame": 3474,
+        "location": [
+            1889,
+            698
+        ],
+        "box": [
+            1863,
+            573,
+            53,
+            250
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 626,
+        "class": "slider_head",
+        "spawn_frame": 3479,
+        "despawn_frame": 3493,
+        "location": [
+            1437,
+            805
+        ],
+        "box": [
+            1343,
+            706,
+            189,
+            198
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 627,
+        "class": "hit_circle",
+        "spawn_frame": 3487,
+        "despawn_frame": 3508,
+        "location": [
+            1072,
+            734
+        ],
+        "box": [
+            985,
+            647,
+            175,
+            175
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 629,
+        "class": "slider_head",
+        "spawn_frame": 3503,
+        "despawn_frame": 3548,
+        "location": [
+            1071,
+            638
+        ],
+        "box": [
+            968,
+            529,
+            206,
+            219
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 630,
+        "class": "slider_head",
+        "spawn_frame": 3504,
+        "despawn_frame": 3504,
+        "location": [
+            1889,
+            696
+        ],
+        "box": [
+            1863,
+            573,
+            52,
+            247
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 631,
+        "class": "slider_head",
+        "spawn_frame": 3508,
+        "despawn_frame": 3522,
+        "location": [
+            1253,
+            830
+        ],
+        "box": [
+            1154,
+            726,
+            199,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 633,
+        "class": "hit_circle",
+        "spawn_frame": 3517,
+        "despawn_frame": 3537,
+        "location": [
+            882,
+            749
+        ],
+        "box": [
+            793,
+            660,
+            178,
+            179
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 634,
+        "class": "slider_head",
+        "spawn_frame": 3524,
+        "despawn_frame": 3524,
+        "location": [
+            1065,
+            613
+        ],
+        "box": [
+            976,
+            534,
+            179,
+            159
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 635,
+        "class": "hit_circle",
+        "spawn_frame": 3524,
+        "despawn_frame": 3527,
+        "location": [
+            1256,
+            827
+        ],
+        "box": [
+            1153,
+            723,
+            206,
+            208
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 636,
+        "class": "slider_head",
+        "spawn_frame": 3534,
+        "despawn_frame": 3534,
+        "location": [
+            1888,
+            697
+        ],
+        "box": [
+            1862,
+            571,
+            52,
+            252
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 637,
+        "class": "slider_head",
+        "spawn_frame": 3537,
+        "despawn_frame": 3580,
+        "location": [
+            884,
+            706
+        ],
+        "box": [
+            780,
+            558,
+            208,
+            296
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 638,
+        "class": "slider_head",
+        "spawn_frame": 3546,
+        "despawn_frame": 3551,
+        "location": [
+            1079,
+            709
+        ],
+        "box": [
+            978,
+            585,
+            202,
+            249
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 639,
+        "class": "slider_head",
+        "spawn_frame": 3551,
+        "despawn_frame": 3554,
+        "location": [
+            878,
+            686
+        ],
+        "box": [
+            789,
+            549,
+            179,
+            274
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 640,
+        "class": "slider_head",
+        "spawn_frame": 3564,
+        "despawn_frame": 3564,
+        "location": [
+            1889,
+            714
+        ],
+        "box": [
+            1859,
+            586,
+            60,
+            256
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 641,
+        "class": "slider_head",
+        "spawn_frame": 3568,
+        "despawn_frame": 3578,
+        "location": [
+            878,
+            641
+        ],
+        "box": [
+            776,
+            548,
+            205,
+            187
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 642,
+        "class": "slider_head",
+        "spawn_frame": 3568,
+        "despawn_frame": 3583,
+        "location": [
+            889,
+            754
+        ],
+        "box": [
+            789,
+            652,
+            200,
+            204
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 643,
+        "class": "hit_circle",
+        "spawn_frame": 3585,
+        "despawn_frame": 3586,
+        "location": [
+            887,
+            762
+        ],
+        "box": [
+            789,
+            669,
+            196,
+            186
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 644,
+        "class": "slider_head",
+        "spawn_frame": 3616,
+        "despawn_frame": 3616,
+        "location": [
+            1085,
+            1035
+        ],
+        "box": [
+            1022,
+            1016,
+            127,
+            39
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 645,
+        "class": "hit_circle",
+        "spawn_frame": 3619,
+        "despawn_frame": 3631,
+        "location": [
+            958,
+            327
+        ],
+        "box": [
+            902,
+            268,
+            112,
+            118
+        ],
+        "hit_type": "unconfirmed"
+    },
+    {
+        "id": 648,
+        "class": "hit_circle",
+        "spawn_frame": 3704,
+        "despawn_frame": 3717,
+        "location": [
+            957,
+            327
+        ],
+        "box": [
+            898,
+            266,
+            118,
+            123
+        ],
+        "hit_type": "unconfirmed"
+    }
+]

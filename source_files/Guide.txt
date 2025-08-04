@@ -1,0 +1,362 @@
+Of course. Here is a comprehensive, step-by-step guide detailing the full implementation of a robust, dynamic overlay augmentation system. This guide breaks down the necessary changes file-by-file, explains the logic, and provides code snippets to serve as a clear blueprint for your development.
+
+Project Goal: Implement Dynamic Overlay Augmentation
+
+The objective is to augment our dataset generation process by adding moving overlays that occlude the gameplay. This will teach our model to be robust to partial object visibility and to ignore visual noise from common stream elements like facecams and hand-cams.
+
+Core Features to Implement:
+
+Dynamic Motion: Overlays will move around the screen, not remain static.
+
+Varied Appearance: Each generation run will use an overlay with a randomly determined size and aspect ratio.
+
+Content-Filled: Overlays will be filled with distracting video content to simulate real-world noise.
+
+Label Integrity: A visibility threshold will be used to ensure that labels for completely hidden objects are removed, preventing data corruption.
+
+Step 1: Gather Overlay Content
+
+Before writing any code, you need content to put inside the moving boxes.
+
+Create a videos Folder: Inside your source_files directory, create a new folder named videos or overlay_content.
+
+Add Distracting Videos: Populate this folder with a few short (1-2 minute) video files (.mp4, .avi, etc.). These should be visually "busy" and unrelated to osu!.
+
+Good examples: Stock footage of a city, a recording of your own hand moving, a nature documentary clip.
+
+The goal is to provide varied, non-gameplay motion and textures.
+
+This folder will be scanned by the master_pipeline.py script.
+
+Step 2: Modify master_pipeline.py to Orchestrate Augmentation
+
+This script will be responsible for deciding if a run gets an overlay and what its properties will be.
+
+File to Edit: master_pipeline.py
+
+Logic:
+
+Scan for Overlay Videos: At the start, scan the new videos folder to get a list of available content.
+
+Define Augmentation Parameters: Set constants for the probability of adding an overlay and for the min/max size constraints.
+
+Update Task Generation Loop: For each task (each map/skin/mod/opacity combination), make a random decision whether to add an overlay.
+
+If Augmenting, Determine Overlay Properties:
+
+Randomly select one of the videos you gathered.
+
+Randomly choose an aspect ratio (e.g., 16:9 for facecam, 9:16 for handcam).
+
+Randomly choose a scale (area coverage) between the min and max limits.
+
+Pass Properties as Command-Line Arguments: Add new arguments to the autogen_dataset.py command to pass all this information:
+
+--overlay-video-path "path/to/video.mp4"
+
+--overlay-aspect-ratio "16:9"
+
+--overlay-scale "0.25"
+
+Code Snippet (master_pipeline.py's main function):
+
+Generated python
+# ... inside main() after scanning for other assets ...
+
+# --- Step 1.A: Scan for Overlay Content ---
+SOURCE_OVERLAY_VIDEOS_DIR = os.path.join(SCRIPT_DIR, "videos")
+overlay_videos = []
+if os.path.exists(SOURCE_OVERLAY_VIDEOS_DIR):
+    overlay_videos = [os.path.join(SOURCE_OVERLAY_VIDEOS_DIR, f) for f in os.listdir(SOURCE_OVERLAY_VIDEOS_DIR)]
+
+# --- NEW: Define Augmentation Parameters ---
+OVERLAY_AUGMENTATION_PROBABILITY = 0.5 # 50% of generated sets will have an overlay
+OVERLAY_MIN_SCALE = 0.10 # Overlay will take up at least 10% of the screen area
+OVERLAY_MAX_SCALE = 0.35 # Overlay will take up at most 35% of the screen area
+OVERLAY_ASPECT_RATIOS = ["16:9", "9:16", "4:3", "1:1"]
+
+# ... inside the main task generation loop in main() ...
+
+# --- MODIFIED: The loop that runs autogen_dataset.py ---
+for i, task in enumerate(tasks):
+    print_status(f"--- Running Task {i + 1}/{len(tasks)} ---", level="TASK")
+    
+    # ... (code to define output_dir_name and output_path) ...
+
+    command = ["python", autogen_script_path, ...] # Your existing command
+    
+    # --- NEW: Decide whether to apply overlay augmentation ---
+    if overlay_videos and random.random() < OVERLAY_AUGMENTATION_PROBABILITY:
+        print_status("Overlay Augmentation ENABLED for this run.", "AUG")
+        
+        # 1. Select a random video
+        overlay_video_path = random.choice(overlay_videos)
+        
+        # 2. Select a random aspect ratio
+        overlay_aspect_ratio = random.choice(OVERLAY_ASPECT_RATIOS)
+        
+        # 3. Select a random scale
+        overlay_scale = random.uniform(OVERLAY_MIN_SCALE, OVERLAY_MAX_SCALE)
+        
+        # 4. Add new arguments to the command
+        command.extend([
+            "--overlay-video-path", overlay_video_path,
+            "--overlay-aspect-ratio", overlay_aspect_ratio,
+            "--overlay-scale", str(overlay_scale)
+        ])
+        
+        # Optionally, add a suffix to the output folder name to identify it
+        output_dir_name += "_overlay"
+
+    if not run_command(command):
+        # ... (rest of your loop) ...
+
+Step 3: Modify autogen_dataset.py to Manage the Overlay
+
+This script will now act as the manager for the overlay, handling its state (position, velocity) and passing all necessary info to the renderer on a per-frame basis.
+
+File to Edit: autogen_dataset.py
+
+Logic:
+
+Add New argparse Arguments: Define the new command-line arguments we added above so the script can receive them.
+
+Initialize Overlay State: Before the main frame generation loop, if an overlay video was provided:
+
+Load the overlay video using OpenCV (cv2.VideoCapture).
+
+Parse the aspect ratio string (e.g., "16:9") into a numerical ratio.
+
+Calculate the final pixel dimensions (width, height) of the overlay box based on the provided scale and aspect ratio relative to the OUTPUT_RESOLUTION.
+
+Initialize the overlay's starting position (e.g., top-left corner).
+
+Initialize the overlay's starting velocity (e.g., (3, 3) pixels per frame).
+
+Update Overlay State in the Loop: Inside the for i in tqdm(...) loop:
+
+Read the next frame from the overlay video. If the video ends, loop it back to the beginning.
+
+Update the overlay's (x, y) position based on its velocity.
+
+Implement the "bouncing" logic: if the box hits a screen edge, reverse the corresponding component of its velocity.
+
+Store the overlay's current frame and its current bounding box (x, y, width, height).
+
+Pass Overlay Info to render_frame: Modify the call to render_frame to include the overlay information for the current frame.
+
+Code Snippet (autogen_dataset.py):
+
+Generated python
+# ... (imports) ...
+import cv2 # Make sure OpenCV is imported
+
+def main():
+    parser = argparse.ArgumentParser(...)
+    # ... (existing arguments) ...
+    # --- NEW: Define overlay arguments ---
+    parser.add_argument("--overlay-video-path", default=None, help="Path to a video file for overlay content.")
+    parser.add_argument("--overlay-aspect-ratio", default="16:9", help="Aspect ratio for the overlay (e.g., '16:9').")
+    parser.add_argument("--overlay-scale", type=float, default=0.2, help="Scale of the overlay as a percentage of screen area.")
+    args = parser.parse_args()
+
+    # ... (existing setup code) ...
+
+    # --- NEW: Initialize Overlay State ---
+    overlay_manager = None
+    if args.overlay_video_path and os.path.exists(args.overlay_video_path):
+        try:
+            overlay_cap = cv2.VideoCapture(args.overlay_video_path)
+            ar_w, ar_h = map(int, args.overlay_aspect_ratio.split(':'))
+            
+            screen_area = cfg.OUTPUT_RESOLUTION[0] * cfg.OUTPUT_RESOLUTION[1]
+            overlay_area = screen_area * args.overlay_scale
+            
+            overlay_h = int((overlay_area / (ar_w / ar_h)) ** 0.5)
+            overlay_w = int(overlay_h * (ar_w / ar_h))
+
+            overlay_manager = {
+                "cap": overlay_cap,
+                "pos": [0, 0], # Initial position [x, y]
+                "vel": [3, 3], # Initial velocity [vx, vy]
+                "size": (overlay_w, overlay_h)
+            }
+            print_status(f"Initialized bouncing overlay with size {overlay_w}x{overlay_h}", "AUG")
+        except Exception as e:
+            print_status(f"Failed to initialize overlay: {e}", "ERROR")
+            overlay_manager = None
+
+    # --- MODIFIED: Main generation loop ---
+    for i in tqdm(range(args.num_frames), desc="Generating Dataset"):
+        # ... (get key_state, cursor_pos, sim_state) ...
+
+        # --- NEW: Update and prepare overlay data for this frame ---
+        overlay_info_for_frame = None
+        if overlay_manager:
+            ret, overlay_frame = overlay_manager["cap"].read()
+            if not ret: # Loop video if it ends
+                overlay_manager["cap"].set(cv2.CAP_PROP_POS_FRAMES, 0)
+                ret, overlay_frame = overlay_manager["cap"].read()
+
+            if ret:
+                # Update position
+                overlay_manager["pos"][0] += overlay_manager["vel"][0]
+                overlay_manager["pos"][1] += overlay_manager["vel"][1]
+
+                # Bounce logic
+                w, h = overlay_manager["size"]
+                if not (0 <= overlay_manager["pos"][0] <= cfg.OUTPUT_RESOLUTION[0] - w):
+                    overlay_manager["vel"][0] *= -1
+                if not (0 <= overlay_manager["pos"][1] <= cfg.OUTPUT_RESOLUTION[1] - h):
+                    overlay_manager["vel"][1] *= -1
+
+                # Resize overlay frame to fit the box and convert to PIL Image
+                overlay_frame_pil = Image.fromarray(cv2.cvtColor(overlay_frame, cv2.COLOR_BGR2RGB))
+                resized_overlay_content = overlay_frame_pil.resize(overlay_manager["size"], Image.Resampling.LANCZOS)
+                
+                overlay_info_for_frame = {
+                    "content": resized_overlay_content,
+                    "box": (
+                        overlay_manager["pos"][0],
+                        overlay_manager["pos"][1],
+                        overlay_manager["size"][0],
+                        overlay_manager["size"][1]
+                    )
+                }
+
+        # --- MODIFIED: Call to renderer ---
+        frame_image, annotation_data = render_frame(
+            # ... (existing arguments) ...
+            overlay_info=overlay_info_for_frame
+        )
+        
+        # ... (rest of the saving logic) ...
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Python
+IGNORE_WHEN_COPYING_END
+Step 4: Modify renderer.py to Handle Occlusion and Label Filtering
+
+This is the most critical part of the implementation. The renderer will take the overlay info, calculate visibility, filter labels, and composite the final image.
+
+File to Edit: renderer.py
+
+Logic:
+
+Update render_frame Signature: Add a new optional argument overlay_info=None.
+
+Define Visibility Threshold: Add a constant VISIBILITY_THRESHOLD = 0.3 (30%).
+
+Main Rendering Flow Change:
+
+First, render the clean gameplay frame without the overlay. This gives you the base image and the complete, unfiltered list of annotations.
+
+Check if overlay_info was provided. If not, just return the clean frame and its annotations.
+
+If overlay_info exists, perform the filtering:
+
+Create a new list for final_annotations.
+
+Get the overlay's bounding box from overlay_info.
+
+For each annotation in the original (unfiltered) list:
+
+Parse the annotation string to get the object's bounding box.
+
+Write a helper function calculate_visibility(object_box, overlay_box) that returns a value from 0.0 to 1.0.
+
+If the visibility is >= VISIBILITY_THRESHOLD, add the original annotation string to final_annotations.
+
+Composite the final image: Paste the overlay content (overlay_info["content"]) onto the clean gameplay frame at the overlay's position (overlay_info["box"]).
+
+Return: Return the composited (occluded) image and the filtered final_annotations.
+
+Code Snippet (renderer.py):
+
+Generated python
+# ... (imports) ...
+
+# --- NEW: Visibility threshold for label filtering ---
+VISIBILITY_THRESHOLD = 0.3 # An object must be at least 30% visible to be labeled.
+
+# --- NEW: Helper function for visibility calculation ---
+def get_box_from_yolo_label(label_str, img_width, img_height):
+    """Converts a YOLO format string back to a pixel bounding box [x1, y1, x2, y2]."""
+    _, x_center_norm, y_center_norm, w_norm, h_norm = map(float, label_str.split())
+    w = w_norm * img_width
+    h = h_norm * img_height
+    x1 = (x_center_norm * img_width) - w / 2
+    y1 = (y_center_norm * img_height) - h / 2
+    return [x1, y1, x1 + w, y1 + h]
+
+def calculate_visibility(object_box, overlay_box):
+    """Calculates the percentage of the object_box that is NOT covered by the overlay_box."""
+    obj_x1, obj_y1, obj_x2, obj_y2 = object_box
+    ov_x1, ov_y1, ov_x2, ov_y2 = overlay_box
+
+    # Calculate intersection area
+    inter_x1 = max(obj_x1, ov_x1)
+    inter_y1 = max(obj_y1, ov_y1)
+    inter_x2 = min(obj_x2, ov_x2)
+    inter_y2 = min(obj_y2, ov_y2)
+
+    inter_w = max(0, inter_x2 - inter_x1)
+    inter_h = max(0, inter_y2 - inter_y1)
+    intersection_area = inter_w * inter_h
+
+    object_area = (obj_x2 - obj_x1) * (obj_y2 - obj_y1)
+    if object_area == 0:
+        return 0.0
+
+    visible_area = object_area - intersection_area
+    return visible_area / object_area
+
+
+# --- MODIFIED: render_frame function signature and logic ---
+def render_frame(frame_number, hit_objects, assets, difficulty, combo_colors, cursor_pos, is_hd,
+                 game_simulation_state, key_state, background_image=None, background_opacity=0.1,
+                 overlay_info=None):
+    
+    # ... (code to generate the clean_frame_image and initial annotations list) ...
+    # This is your existing rendering logic up to the point of returning.
+    # Let's assume the result is `clean_frame_image` and `unfiltered_annotations`.
+
+    # --- NEW: Overlay application and label filtering ---
+    if overlay_info:
+        final_annotations = []
+        overlay_box_xywh = overlay_info["box"]
+        overlay_box_xyxy = [
+            overlay_box_xywh[0], overlay_box_xywh[1],
+            overlay_box_xywh[0] + overlay_box_xywh[2], overlay_box_xywh[1] + overlay_box_xywh[3]
+        ]
+
+        for label_str in unfiltered_annotations:
+            object_box_xyxy = get_box_from_yolo_label(
+                label_str, cfg.OUTPUT_RESOLUTION[0], cfg.OUTPUT_RESOLUTION[1]
+            )
+            visibility = calculate_visibility(object_box_xyxy, overlay_box_xyxy)
+            
+            if visibility >= VISIBILITY_THRESHOLD:
+                final_annotations.append(label_str)
+
+        # Composite the final image by pasting the overlay content
+        occluded_image = clean_frame_image.copy()
+        occluded_image.paste(
+            overlay_info["content"],
+            (overlay_box_xywh[0], overlay_box_xywh[1])
+        )
+        
+        return occluded_image, "\n".join(final_annotations)
+    else:
+        # If no overlay, return the original clean frame and labels
+        return clean_frame_image, "\n".join(unfiltered_annotations)
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Python
+IGNORE_WHEN_COPYING_END
+
+This comprehensive guide provides the complete logic and structure for your implementation. By following these steps, you will create a highly advanced data augmentation pipeline that will significantly improve the real-world performance and robustness of your object detection model.

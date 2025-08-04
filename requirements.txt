@@ -1,4 +1,11 @@
-opencv-python
+ultralytics
+torch
+torchvision
+torchaudio
+opencv-python-headless
 numpy
-scipy
-pytesseract
+Pillow
+tqdm
+osrparse
+bezier
+google-cloud-storage

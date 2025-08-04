@@ -1,0 +1,4 @@
+train: C:\Users\predator\PycharmProjects\osu_analyzer\source_files\datasets\master_dataset_v16\images\train
+val: C:\Users\predator\PycharmProjects\osu_analyzer\source_files\datasets\master_dataset_v16\images\val
+nc: 3
+names: ['hit_circle', 'cursor', 'hit_miss']

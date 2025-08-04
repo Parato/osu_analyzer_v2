@@ -1,0 +1,20 @@
+# dataset.yaml
+#
+# This file describes the custom dataset for training the YOLOv8 model.
+# It tells the training script where to find the images and labels, and defines the classes.
+
+# Path to the directory containing training images.
+# The script will look for a corresponding 'labels' folder at the same level.
+# Example: ../datasets/osu/images/train/
+train: ../datasets/osu/images/train
+
+# Path to the directory containing validation images.
+# Example: ../datasets/osu/images/val/
+val: ../datasets/osu/images/val
+
+# Number of classes in the dataset.
+nc: 4
+
+# Class names, in the exact order as their class IDs (0, 1, 2, ...).
+# This MUST match the order in annotator.py.
+names: ['hit_circle', 'cursor', 'slider_head', 'hit_burst']

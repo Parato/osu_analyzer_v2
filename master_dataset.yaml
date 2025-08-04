@@ -1,0 +1,5 @@
+
+train: C:\Users\predator\PycharmProjects\osu_analyzer\datasets\master_dataset\images\train
+val: C:\Users\predator\PycharmProjects\osu_analyzer\datasets\master_dataset\images\val
+nc: 4
+names: ['hit_circle', 'cursor', 'slider_head', 'hit_burst']
