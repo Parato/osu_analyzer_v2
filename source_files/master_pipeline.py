@@ -77,6 +77,13 @@ def list_gcs_dirs(gcs_path):
     """Lists all subdirectories in a GCS path."""
     client = get_gcs_client()
     bucket_name, prefix = parse_gcs_path(gcs_path)
+
+    # --- KORREKTUR: Stellen Sie sicher, dass der Präfix mit einem '/' endet ---
+    # Dies ist entscheidend, damit der 'delimiter' korrekt funktioniert.
+    if prefix and not prefix.endswith('/'):
+        prefix += '/'
+    # --- ENDE DER KORREKTUR ---
+
     blobs = client.list_blobs(bucket_name, prefix=prefix, delimiter='/')
     # The prefixes property will be populated with the subdirectories
     return [p for p in blobs.prefixes]
